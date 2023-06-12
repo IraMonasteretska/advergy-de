@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="sublink">
+                                <a href="#">Für Unternehmen</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li class="subsublink">
+                                        <a href="#">
+                                            Unterlagen gestalten
+                                        </a>
+                                        <span class="linkarr"></span>
+                                        <ul class="subsubmenu">
+                                            <li><a href="#">Tipps für Contracting</a></li>
+                                            <li><a href="#">Tipps für Festanstellung</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Für Festangestellte</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Für Freelancer</a></li>
+                            <li><a href="#">Starte durch bei ADVERGY</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__partner">
+                    <img src="img/header-partner.svg" alt="partner">
+                </div>
+
+                <button class="burger burger2"><span></span></button>
+            </div>
+        </header>
+
+        <main class="main">
+
+
+            <section class="js-heroscreen">
+                <img src="img/new/job_search_heroimage.jpg" alt="img">
+                <div class="js-heroscreen__info cpl">
+                    <div class="js-heroscreen__infowrap">
+                        <h1>
+                            Aktuelle <br>Stellenausschreibungen
+                        </h1>
+                        <p>
+                            Hör auf zu suchen, fang an zu finden – gleich hier! Scroll Dich durch die aktuellen
+                            Stellenausschreibungen und nutze die Filter, um Deine Suche zu verfeinern.
+                        </p>
+                        <form>
+                            <h3>What do you do?</h3>
+                            <div class="js-inputrow">
+                                <div class="js-inputfield">
+                                    <label>
+                                        <input class="customradio" type="radio" name="specialty">
+                                        <span>IT</span>
+                                    </label>
+                                </div>
+                                <div class="js-inputfield">
+                                    <label>
+                                        <input class="customradio" type="radio" name="specialty">
+                                        <span>Construction & Property</span>
+                                    </label>
+                                </div>
+                                <div class="js-inputfield">
+                                    <label>
+                                        <input class="customradio" type="radio" name="specialty">
+                                        <span>Finance</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="js-inputrow">
+                                <input type="text" placeholder="Jobtitel oder Stichwort eingeben">
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5005 16.5005C11.2884 16.5005 12.0687 16.3453 12.7966 16.0438C13.5246 15.7423 14.186 15.3003 14.7431 14.7431C15.3003 14.186 15.7423 13.5246 16.0438 12.7966C16.3453 12.0687 16.5005 11.2884 16.5005 10.5005C16.5005 9.71257 16.3453 8.93236 16.0438 8.2044C15.7423 7.47645 15.3003 6.81501 14.7431 6.25786C14.186 5.70071 13.5246 5.25875 12.7966 4.95723C12.0687 4.6557 11.2884 4.5005 10.5005 4.5005C8.9092 4.5005 7.38308 5.13264 6.25786 6.25786C5.13264 7.38308 4.5005 8.9092 4.5005 10.5005C4.5005 12.0918 5.13264 13.6179 6.25786 14.7431C7.38308 15.8684 8.9092 16.5005 10.5005 16.5005ZM16.8205 15.4065L20.4005 18.9865C20.4959 19.0788 20.572 19.1892 20.6244 19.3113C20.6767 19.4333 20.7042 19.5645 20.7052 19.6973C20.7063 19.8301 20.6809 19.9618 20.6305 20.0846C20.5802 20.2075 20.5058 20.3191 20.4119 20.4129C20.3179 20.5067 20.2062 20.5809 20.0833 20.6311C19.9604 20.6813 19.8287 20.7065 19.6959 20.7052C19.5631 20.704 19.4319 20.6763 19.3099 20.6238C19.188 20.5713 19.0777 20.4951 18.9855 20.3995L15.4055 16.8195C13.798 18.0674 11.7753 18.6557 9.74926 18.4647C7.72322 18.2737 5.84611 17.3178 4.50005 15.7916C3.154 14.2653 2.44019 12.2834 2.50393 10.2494C2.56767 8.2154 3.40417 6.28213 4.84315 4.84315C6.28213 3.40417 8.2154 2.56767 10.2494 2.50393C12.2834 2.44019 14.2653 3.154 15.7916 4.50005C17.3178 5.84611 18.2737 7.72322 18.4647 9.74926C18.6557 11.7753 18.0674 13.798 16.8195 15.4055L16.8205 15.4065Z"
+                                            fill="#5189CF" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="js-result">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="js-result__wrapper">
+                                <h2>
+                                    Deine individuelle Jobsuche
+                                </h2>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="js-result__item">
+                                    <div class="js-result__item-head">
+                                        <div class="js-result__item-img">
+                                            <img src="img/new/job_result_item.svg" alt="image">
+                                        </div>
+                                        <div class="js-result__item-title">
+                                            <h4>
+                                                Senior Test Automation Engineer
+                                            </h4>
+                                            <p>
+                                                Hamburg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="js-result__item-content">
+                                        <p>
+                                            The global company has been manufacturing sustainable products for over 100
+                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
+                                            financially stable and has high growth dynamics.
+                                        </p>
+                                        <p>
+                                            Here you take on responsibility and can take your own initiatives without
+                                            being slowed...
+                                        </p>
+
+                                    </div>
+                                    <div class="js-result__item-bottom">
+                                        <a href="#">
+                                            Öffne Vorschau
+                                        </a>
+                                        <a href="#" class="popup__btn" data-popup="popup-review">
+                                            Vollständige Jobansicht
+                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="update-btn">
+                                    <a href="#">
+                                        <img src="img/new/resume.svg" alt="icon">
+                                        Erweitern
+                                    </a>
+                                </div>
+                                <div class="pagination">
+                                    <ul>
+                                        <li>
+                                            <span class="prev disabled">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 6.07813L9 12.0781L15 18.0781" stroke="#8FA1BD"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li><a class="current" href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">...</a></li>
+                                        <li><a href="#">12</a></li>
+                                        <li>
+                                            <span class="next">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 18.0781L15 12.0781L9 6.07813" stroke="#8FA1BD"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-result__form">
+                    <div class="js-result__form-head">
+                        <h3>
+                            Deine Suche verfeinern
+                        </h3>
+                        <a href="#">
+                            Schließen
+                        </a>
+                    </div>
+                    <form>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Funktion
+                                </div>
+                                <div class="js-result__form-body">
+                                    <p>
+                                        Jobtitel/Stichwort
+                                    </p>
+                                    <div class="inputfield">
+                                        <input type="text" placeholder="QA Engineer">
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Nur über Jobtitel suchen
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Arbeitsort
+                                </div>
+                                <div class="js-result__form-body">
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Umgebung 1
+                                            </p>
+                                            <a class="inputfield-delete" href="#">
+                                                <img src="img/new/trash.svg" alt="delete">
+                                            </a>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input class="customradio" type="radio" name="js-search1">
+                                                <span>
+                                                    Suche nach Region
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input class="customradio" type="radio" name="js-search1">
+                                                <span>
+                                                    Suche nach Postleitzahl
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <input type="text" placeholder="z.B. Berlin">
+                                        </div>
+                                        <div class="inputfield">
+                                            <span>
+                                                Im Umkreis von
+                                            </span>
+                                            <select class="customselect">
+                                                <option value=""></option>
+                                                <option value="20 km">20 km</option>
+                                                <option value="50 km">50 km</option>
+                                                <option value="70 km">70 km</option>
+                                                <option value="100 km">100 km</option>
+                                                <option value=">150km">>150km</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Umgebung 2
+                                            </p>
+                                            <a class="inputfield-delete" href="#">
+                                                <img src="img/new/trash.svg" alt="delete">
+                                            </a>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input class="customradio" type="radio" name="js-search1">
+                                                <span>
+                                                    Suche nach Region
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input class="customradio" type="radio" name="js-search1">
+                                                <span>
+                                                    Suche nach Postleitzahl
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <input type="text" placeholder="z.B. Berlin">
+                                        </div>
+                                        <div class="inputfield">
+                                            <span>
+                                                Im Umkreis von
+                                            </span>
+                                            <select class="customselect">
+                                                <option value=""></option>
+                                                <option value="20 km">20 km</option>
+                                                <option value="50 km">50 km</option>
+                                                <option value="70 km">70 km</option>
+                                                <option value="100 km">100 km</option>
+                                                <option value=">150km">>150km</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="inputblock">
+                                        <p>Weitere Orte hinzufügen</p>
+                                        <span>Hamburg</span>
+                                        <span>Berlin</span>
+                                        <a href="#">+</a>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Area of Expertise
+                                </div>
+                                <div class="js-result__form-body">
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                IT (Information Technology)
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Construction and Property
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Finance
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Karrierestufe
+                                </div>
+                                <div class="js-result__form-body">
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Geringe Berufserfahrung
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Mit Berufserfahrung
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Mit Führungsverantwortung
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Worktype
+                                </div>
+                                <div class="js-result__form-body">
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Nur 100% remote arbeiten.
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Flexibel von Zuhause oder Office arbeiten
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-result__form-content">
+                            <div class="js-result__form-item">
+                                <div class="js-result__form-name">
+                                    Anstellungsform
+                                </div>
+                                <div class="js-result__form-body">
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Vollzeit
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="inputfield">
+                                        <label>
+                                            <input type="checkbox" name="jobtitel" class="customcheck">
+                                            <span>
+                                                Teilzeit
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="js-result__form-bottom">
+                        <p>
+                            Keine passende Perspektive gefunden? <br>
+                            Wir finden sie gemeinsam.
+                        </p>
+                        <a href="#">
+                            Jetzt Traumposition anfragen
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- popup review of work -->
+    <div class="popup__window hide popup-review">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <div class="popup__title">
+                        <h2>
+                            IT System Engineer
+                        </h2>
+                        <p>
+                            Hamburg
+                        </p>
+                    </div>
+                    <div class="popup__content">
+                        <p>
+                            For our well-known customer, who is active in the fiber and paper industry, we are currently looking for an IT system administrator for a permanent position in the Aalen area.
+                        </p>
+                        <p>
+                            The global company has been manufacturing sustainable products for over 100 years. With more than 3,000 employees at over 50 locations worldwide, it is financially stable and has high growth dynamics. Here you take on responsibility and can take your own initiatives without being slowed down by a lot of bureaucracy. 
+                        </p>
+                        <h3>
+                            Tasks
+                        </h3>
+                        <ul>
+                            <li>
+                                You configure and further develop the endpoint management systems.
+                            </li>
+                            <li>
+                                You are responsible for software distribution and patch management
+                            </li>
+                            <li>
+                                You look after and manage the IT systems
+                            </li>
+                            <li>
+                                Carry out installation and configuration work
+                            </li>
+                            <li>
+                                1st & 2nd level support
+                            </li>
+                        </ul>
+                        <h3>
+                            Profile
+                        </h3>
+                        <ul>
+                            <li>
+                                Work experience in the IT sector
+                            </li>
+                            <li>
+                                Competence in dealing with Microsoft products – Windows, Office, Outlook and SharePoint...
+                            </li>
+                        </ul>
+                        <h3>
+                            Benefits
+                        </h3>
+                        <ul>
+                            <li>
+                                Betriebsarzt
+                            </li>
+                            <li>
+                                13 Gehalt
+                            </li>
+                            <li>
+                                Mitarbeiter-Bonus
+                            </li>
+                            <li>
+                                Betriebliche Altersvorsorge
+                            </li>
+                            <li>
+                                Firmenausflüge / -reise
+                            </li>
+                            <li>
+                                Firmenausflüge / -reise
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup__bottom">
+                        <a href="#" class="whitebtn">Go back to search</a>
+                        <a href="#" class="bluebtn">See full description</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

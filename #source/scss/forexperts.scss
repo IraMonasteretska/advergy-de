@@ -1,0 +1,889 @@
+// welcome screen
+
+.welcomesect {
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    position: relative;
+
+    &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.welcomesect__info {
+    width: 49%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(28, 75, 133, 0.595) 0%, rgba(18, 56, 103, 0.85) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+
+    .welcomesect__infowrap {
+        h1 {
+            margin-bottom: 24px;
+            color: #fff;
+        }
+
+        .linetext {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 24px;
+            padding-left: 94px;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 80px;
+                height: 4px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 13px;
+            }
+        }
+
+        .descr {
+            max-width: 490px;
+            margin-bottom: 24px;
+
+            p {
+                text-align: justify;
+                color: #fff;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// partners
+.partners {
+    padding: 53px 0 60px;
+
+    .partners__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            display: inline-block;
+            margin-right: 20px;
+
+            &:nth-child(5),
+            &:nth-child(10) {
+                margin-right: 0;
+            }
+
+            img {
+                vertical-align: top;
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+// Was wir Dir bieten.
+.propositionsect {
+    position: relative;
+    overflow: hidden;
+    min-height: 762px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.propositionsect__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+}
+
+.propositionsect__textsect {
+    background: linear-gradient(180deg, rgba(28, 75, 133, 0.595) 0%, rgba(18, 56, 103, 0.85) 100%);
+    width: 56.5%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    min-height: 762px;
+    padding-top: 100px;
+    padding-left: 100px;
+
+    .secttitle {
+        color: #fff;
+        margin-bottom: 0;
+    }
+}
+
+.row.sp20 {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .col-xl-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.propositionbox {
+    margin-top: 40px;
+
+    img {
+        height: 48px;
+        margin-bottom: 8px;
+    }
+
+    .title {
+        color: #fff;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .descr {
+        color: #D4DCE7;
+
+        &p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// infosect
+
+.infosect {
+    padding: 60px 0;
+    background-color: #F2F4F8;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .secttitle {
+        margin-bottom: 12px;
+        color: #2A2A2A;
+    }
+
+    .descr {
+        max-width: 877px;
+        margin: 0 auto 24px;
+
+        p {
+            color: rgba(42, 42, 42, 0.75);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .infosect__textbg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+        bottom: 66px;
+        max-width: 100%;
+    }
+
+    &.traumjob {
+        padding: 124px 0;
+        background-color: #fff;
+
+        .infosect__textbg {
+            bottom: 30px;
+        }
+    }
+}
+
+// workflow
+
+.workflow {
+    padding: 119px 0 80px;
+    position: relative;
+    background: #F2F4F8;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(143, 161, 189, 0.15);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('../img/borderdash.png');
+        background-repeat: repeat-x;
+        background-position: left bottom;
+    }
+}
+
+.workflowwrapper {
+    position: relative;
+    padding: 60px 0 80px;
+    z-index: 3;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('../img/workflowcolorbg.png') no-repeat center / cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .workflowbgimg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        top: 0;
+        left: 0;
+
+    }
+}
+
+.workflowtextblock {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+
+    .secttitle {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+}
+
+.workflowprocboxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 75px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .dachline {
+        position: absolute;
+        left: 0;
+        top: 151px;
+    }
+}
+
+.workflowprocbox {
+    flex: 0 0 auto;
+    width: 20%;
+
+    .workflowprocbox__top {
+        height: 174px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .workflowprocbox__bott {
+        height: 150px;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .wfcircle {
+        background: #fff;
+        border-radius: 200px;
+        width: 156px;
+        height: 156px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 36px;
+        }
+    }
+
+    .wftitle {
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 103px;
+            background: url('../img/wflinetitle.png') no-repeat center / 100%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 0;
+        }
+    }
+
+    .wfdescr {
+        color: #F2F4F8;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    &:nth-child(even) {
+        .workflowprocbox__top {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .workflowprocbox__bott {
+            display: flex;
+            align-items: flex-end;
+
+            .wftitle {
+                width: 100%;
+                margin-bottom: 0;
+
+                &::after {
+                    background: url('../img/wflinetitle2.png') no-repeat center/100%;
+                    top: -2px;
+                    bottom: initial;
+                }
+            }
+        }
+    }
+}
+
+.dachline.tablet,
+.wftitle.mob,
+.dachline.vertical {
+    display: none;
+}
+
+
+@media(max-width:1300.8px) {
+    .propositionsect__textsect {
+        padding-top: 70px;
+        padding-left: 70px;
+    }
+
+    .workflowprocboxes .dachline {
+        width: 100%;
+    }
+
+    .workflowprocbox .wfcircle {
+        width: 140px;
+        height: 140px;
+    }
+
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .partners .partners__wrapper a img {
+        vertical-align: top;
+        max-width: 160px;
+    }
+
+    .propositionsect__textsect {
+        width: 100%;
+        padding-left: 31px;
+    }
+
+    .workflowprocbox .wfcircle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .dachline.desck {
+        display: none;
+    }
+
+    .dachline.tablet {
+        display: block;
+    }
+
+    .workflowprocboxes .dachline {
+        width: 103%;
+        top: 162px;
+    }
+
+    .workflow:after {
+        height: 442px;
+    }
+
+    .workflowprocbox .wftitle {
+        font-size: 16px;
+    }
+
+    .workflowprocbox .wfdescr {
+        font-size: 13px;
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .welcomesect {
+        height: 475px;
+    }
+
+    .welcomesect__info {
+        width: 58.5%;
+    }
+
+    .welcomesect__info .welcomesect__infowrap h1,
+    .welcomesect__info .welcomesect__infowrap .linetext {
+        margin-bottom: 12px;
+    }
+
+    .welcomesect__info .welcomesect__infowrap .linetext {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .welcomesect__info .welcomesect__infowrap .descr p {
+        text-align: left;
+    }
+
+    .welcomesect__infowrap .whitebtn {
+        display: none;
+    }
+
+    .partners {
+        padding: 32px 0;
+    }
+
+    .partners .partners__wrapper a img {
+        width: 117px;
+    }
+
+    .propositionsect__textsect {
+        padding: 40px !important;
+        min-height: initial;
+    }
+
+    .propositionsect__textsect .secttitle {
+        margin-bottom: 8px;
+    }
+
+    .propositionbox {
+        margin-top: 32px;
+    }
+
+    .propositionbox .title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .propositionsect {
+        min-height: initial;
+    }
+
+    .infosect {
+        padding: 50px 0 42px;
+    }
+
+    .infosect .infosect__textbg {
+        max-width: calc(100% - 80px);
+        bottom: 50px;
+    }
+
+    .workflow {
+        padding: 40px 0;
+    }
+
+    .workflowwrapper .workflowbgimg {
+        display: none;
+    }
+
+    .workflowtextblock .secttitle {
+        margin-bottom: 22px;
+    }
+
+    .workflowprocbox .wfcircle {
+        width: 80px;
+        height: 80px;
+
+        img {
+            width: 24px;
+        }
+    }
+
+    .workflowwrapper {
+        padding: 28px 0 32px;
+    }
+
+    .workflowprocboxes {
+        padding: 0 50px;
+    }
+
+    .workflowprocbox {
+        .wftitle {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .wfdescr {
+            font-size: 10px;
+            line-height: 15px;
+        }
+    }
+
+    .workflowprocboxes .dachline {
+        width: calc(100% + 40px);
+        top: 100px;
+        margin-left: -11px;
+    }
+
+    .workflowprocbox .workflowprocbox__top {
+        height: 115px;
+    }
+
+    .workflowprocbox .wftitle:after {
+        height: 76px;
+        background-position: top center;
+        top: 25px;
+    }
+
+    .workflowprocbox .workflowprocbox__bott {
+        height: 115px;
+    }
+
+    .workflowprocbox:nth-child(2n) .workflowprocbox__bott .wftitle:after {
+        top: 15px;
+        background-position: bottom center;
+    }
+
+    .workflowprocbox .wfdescr {
+        max-width: calc(100% + 40px);
+        flex: 0 0 calc(100% + 40px);
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .workflowprocbox .workflowprocbox__top {
+        padding-bottom: 6px;
+    }
+
+    .workflowprocbox .workflowprocbox__bott {
+        display: flex;
+    }
+
+    .workflow:after {
+        height: 246px;
+    }
+
+    .infosect.traumjob {
+        padding: 50px 0 105px;
+    }
+
+    .infosect .descr {
+        max-width: 491px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width: 767.8px) {
+
+    .welcomesect__info.cpl {
+        width: 100%;
+        padding: 0 !important;
+
+        .welcomesect__infowrap {
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 0 !important;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .partners .partners__wrapper a:nth-child(10) {
+        display: none;
+    }
+
+    .workflowprocbox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .workflowprocbox__bott,
+        .workflowprocbox__top {
+            height: auto;
+            order: 2;
+        }
+
+        .workflowprocbox__icon {
+            order: 1;
+        }
+    }
+
+    .wftitle.mob {
+        display: block;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .dachline.tablet,
+    .workflowprocbox .wftitle:after {
+        display: none;
+    }
+
+    .workflowprocbox:nth-child(odd) {
+        .workflowprocbox__top {
+            display: none;
+        }
+    }
+
+    .workflowprocbox:nth-child(even) {
+        .workflowprocbox__bott {
+            display: none;
+        }
+    }
+
+    .workflowprocbox__icon {
+        flex: 0 0 auto;
+        width: 80px;
+    }
+
+    .workflowprocbox .workflowprocbox__bott,
+    .workflowprocbox .workflowprocbox__top {
+        flex: 0 0 auto;
+        width: calc(100% - 80px);
+        padding-left: 27px;
+        padding-top: 0;
+        display: block;
+        text-align: left;
+    }
+
+    .workflowprocbox .wfdescr {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .workflowprocbox:nth-child(2n) .workflowprocbox__top {
+        display: block;
+    }
+
+    .dachline.vertical {
+        display: block;
+        width: auto;
+        margin: 0;
+        top: 0;
+        left: 36px;
+    }
+
+    .workflow {
+        &::after {
+            // width: 177px;
+            width: calc(100vw / 2 - 110px);
+            height: 100%;
+            background-image: url(../img/borderdash2.png);
+            background-repeat: repeat-y;
+            background-position: top right;
+        }
+    }
+
+    .propositionsect__textsect {
+        max-width: 540px;
+        margin: 0 auto;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        background: transparent;
+    }
+
+    .propositionsect::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(28, 75, 133, 0.595) 0%, rgba(18, 56, 103, 0.85) 100%);
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-width: 575.8px) {
+    .welcomesect {
+        height: 100vh;
+        min-height: 500px;
+    }
+
+    .welcomesect__info .welcomesect__infowrap .linetext {
+        padding-left: 64px;
+
+        &::after {
+            width: 52px;
+        }
+    }
+
+    .welcomesect>img {
+        object-position: 60% 50%;
+    }
+
+    .partners .partners__wrapper a {
+        flex: 0 0 auto;
+        width: 33.333%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .propositionsect__textsect {
+        padding: 40px 20px !important;
+    }
+
+    .propositionbox .descr p:last-child {
+        margin-bottom: 0;
+    }
+
+    .propositionbox .title br {
+        display: none;
+    }
+
+    .infosect .descr {
+        margin-bottom: 20px;
+    }
+
+    .infosect .infosect__textbg {
+        display: none;
+    }
+
+    .workflowwrapper {
+        padding-bottom: 40px;
+    }
+
+    .workflowprocboxes {
+        padding: 0 20px 0 37px;
+    }
+
+    .workflowtextblock .secttitle {
+        margin-bottom: 8px;
+    }
+
+    .workflow:after {
+        width: 150px;
+    }
+
+    .dachline.vertical {
+        left: 23px;
+        height: calc(100% + 45px);
+        top: 5px;
+    }
+
+    .workflowprocboxes {
+        overflow: visible;
+    }
+
+    .workflowwrapper {
+        overflow: hidden;
+    }
+
+    .infosect.traumjob {
+        padding: 89px 0;
+    }
+
+    .workflowprocbox {
+        margin-top: 0;
+    }
+
+    .workflowprocbox .workflowprocbox__bott,
+    .workflowprocbox .workflowprocbox__top {
+        height: 112px;
+    }
+
+    .partners .partners__wrapper a img {
+        max-width: 100%;
+    }
+
+
+    .infosect {
+        padding: 40px 0;
+    }
+
+}
+
+@media(max-width:460.8px) {
+    .partners .partners__wrapper a img {
+        width: 108px;
+    }
+
+    .partners .partners__wrapper a {
+        margin: 0;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .dachline.vertical {
+        display: none;
+    }
+
+    .workflowprocbox .workflowprocbox__bott,
+    .workflowprocbox .workflowprocbox__top {
+        height: auto;
+    }
+
+    .workflowprocbox {
+        margin-top: 20px;
+    }
+
+    .workflowprocboxes {
+        padding-left: 20px;
+    }
+
+    .workflow:after {
+        width: 135px;
+    }
+
+
+    
+
+}
