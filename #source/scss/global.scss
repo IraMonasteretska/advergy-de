@@ -6,6 +6,10 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 body,
