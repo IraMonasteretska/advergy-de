@@ -28,9 +28,6 @@
 
 .ap-heroscreen__infowrap {
     h1 {
-        font-weight: 600;
-        font-size: 52px;
-        line-height: 78px;
         margin-bottom: 24px;
         color: #FFFFFF;
 
@@ -41,7 +38,8 @@
         font-size: 20px;
         line-height: 30px;
         color: #FFFFFF;
-        display: block;
+        display: flex;
+        align-items: center;
         margin-bottom: 24px;
 
         &:before {
@@ -57,8 +55,6 @@
     }
 
     p {
-        font-size: 16px;
-        line-height: 24px;
         max-width: 500px;
         color: #FFFFFF;
     }
@@ -68,7 +64,7 @@
 // form section ----------- //
 
 .ap-form {
-    padding: 60px 0;
+    padding: 60px 0 0;
 }
 
 .ap-form form {
@@ -114,15 +110,21 @@
     }
 }
 
-.inputblock {
+.ap-form .inputblock {
     padding-left: 100px;
     margin-bottom: 43px;
     position: relative;
 
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 58px;
+
+        &:before {
+            border-left: 2px dashed #D4DCE7;
+        }
+    }
+
     >p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
         color: rgba(42, 42, 42, 0.75);
         margin-bottom: 24px;
     }
@@ -133,9 +135,10 @@
         left: 34px;
         top: 0;
         height: 100%;
-        width: 2px;
-        background-color: #D4DCE7;
+        width: 1px;
+        border-left: 2px solid #D4DCE7;
     }
+
     .select2.select2-container.select2-container--default {
         width: 488px !important;
     }
@@ -161,16 +164,34 @@
                 pointer-events: none;
             }
 
-            &:after {
-                content: '';
+            .upload-btn {
                 position: absolute;
-                background-image: url(/img/new/Plus_blue.svg);
                 right: 12px;
                 width: 24px;
                 height: 24px;
                 top: 50%;
                 transform: translateY(-50%);
                 cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            .delete-btn {
+                position: absolute;
+                right: 48px;
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
 
@@ -183,6 +204,8 @@
 
             input {
                 max-width: 346px;
+                border-radius: 0 2px 2px 0;
+                border-left: none;
             }
 
             .select2.select2-container.select2-container--default {
@@ -194,8 +217,6 @@
             }
 
             .select2-selection__rendered {
-                font-size: 16px;
-                line-height: 24px;
                 color: rgba(42, 42, 42, 0.75);
 
                 img {
@@ -226,9 +247,6 @@
         }
 
         p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
             color: rgba(42, 42, 42, 0.75);
             margin: 0;
         }
@@ -279,4 +297,187 @@ p.thankyou-text {
     line-height: 30px;
     color: #1C4B85;
     margin-top: 32px;
+    margin-bottom: 0;
+}
+
+
+// RESPONSIVE -------------------- //
+
+@media (max-width: 991.8px) {
+    .ap-form form button {
+        margin-top: 20px;
+    }
+
+    .ap-form .inputblock:last-child {
+        padding-bottom: 50px;
+    }
+
+    .ap-form .inputblock .inputfield textarea {
+        width: 358px;
+    }
+
+    .ap-form .inputblock .inputfield.textarea p {
+        max-width: 220px;
+    }
+
+    .ap-form p.thankyou-text {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 24px;
+    }
+
+    .ap-form .inputblock .inputfield.error:after {
+        right: 254px;
+    }
+
+    .ap-form .inputblock .inputfield.phone input {
+        max-width: 220px;
+    }
+
+    .ap-form .inputblock .inputfield.phone .select2.select2-container.select2-container--default {
+        width: 138px !important;
+    }
+
+    .ap-form .inputblock .select2.select2-container.select2-container--default {
+        width: 358px !important;
+    }
+
+    .ap-form .inputfield input[type=text] {
+        height: 41px;
+        padding: 7px 12px;
+    }
+
+    .ap-form .inputblock .inputfield input {
+        max-width: 358px;
+    }
+
+    .ap-form form h3 {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 37px;
+        padding-left: 86px;
+    }
+
+    .ap-heroscreen__info {
+        width: 58.5%;
+    }
+
+    .ap-heroscreen__infowrap .linetext {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 12px;
+    }
+
+    .ap-heroscreen__infowrap h1 {
+        margin-bottom: 12px;
+    }
+
+    .ap-heroscreen__infowrap {
+        max-width: 340px;
+    }
+
+    .ap-heroscreen {
+        height: calc(100vh - 60px);
+    }
+}
+
+@media (max-width: 767.8px) {
+
+    .ap-form .inputblock .inputfield.upload-popup .delete-btn,
+    .ap-form .inputblock .inputfield.upload-popup .upload-btn {
+        transform: translateY(0%);
+    }
+
+    .ap-form {
+        padding: 50px 0 0;
+    }
+
+    .ap-form .inputblock .inputfield.error:after {
+        right: initial;
+        left: 0;
+    }
+
+    .ap-form .inputblock {
+        padding-left: 90px;
+        margin-bottom: 30px;
+    }
+
+    .ap-form .inputfield {
+        width: 100%;
+        max-width: 358px;
+    }
+
+    .ap-form .inputblock .select2.select2-container.select2-container--default {
+        width: 100% !important;
+        max-width: 358px;
+    }
+
+    .ap-form .inputblock .inputfield.phone input {
+        max-width: 50%;
+    }
+
+    .ap-form .inputblock .inputfield.phone .select2.select2-container.select2-container--default {
+        width: 50% !important;
+    }
+
+    .ap-form form h3 {
+        margin-bottom: 30px;
+        padding-left: 93px;
+    }
+
+    .ap-form .inputblock .inputfield p {
+        margin-bottom: 4px;
+    }
+
+    .ap-form .inputblock .inputfield+.inputfield {
+        margin-top: 20px;
+    }
+
+    .ap-heroscreen__info {
+        width: 100%;
+    }
+
+    .ap-heroscreen__infowrap {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .ap-heroscreen__info.cpl {
+        padding: 0 !important;
+    }
+
+}
+
+@media (max-width: 575.8px) {
+
+    .ap-heroscreen__info.cpl {
+        padding: 0 20px !important;
+    }
+
+    .ap-heroscreen>img {
+        object-position: 80% 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    .ap-form .inputblock {
+        padding-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .ap-form form h3 span {
+        width: 50px;
+        height: 50px;
+        left: -10px;
+        font-size: 26px;
+    }
+
+    .ap-form .inputblock:before {
+        left: 15px;
+    }
+
+    .ap-form form h3 {
+        margin-bottom: 15px;
+        padding-left: 50px;
+    }
 }

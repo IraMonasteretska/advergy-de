@@ -85,9 +85,40 @@ h6 {
     background: #1C4B85;
     border-radius: 8px;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 
     &:hover {
         background: #113867;
+    }
+
+    &:disabled {
+        background: #D4DCE7;
+        cursor: inherit;
+    }
+}
+
+.bordwhitebtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 51px;
+    padding: 3px 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+
+    border: 2px solid #8FA1BD;
+    background: #fff;
+    color: #1C4B85;
+
+    &:hover {
+        border: 2px solid #1C4B85;
     }
 }
 

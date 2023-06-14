@@ -1,0 +1,111 @@
+.errorsect {
+    padding: 204px 0 57px;
+    text-align: center;
+    position: relative;
+
+    img {
+        max-width: 172px;
+        margin-bottom: 20px;
+        animation: errorpic 4s infinite;
+        animation-timing-function: linear;
+    }
+
+    .secttitle {
+        margin-bottom: 4px;
+        color: #2A2A2A;
+
+    }
+
+    .descr {
+        margin-bottom: 20px;
+        color: rgba(42, 42, 42, 0.75);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .abstext {
+        position: absolute;
+        width: 100%;
+        color: #D4DCE7;
+        opacity: 0.4;
+        font-weight: 700;
+        font-size: 320px;
+        line-height: 480px;
+        top: 0;
+        left: 0;
+    }
+
+    .errorsect__info {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@keyframes errorpic {
+    from {
+        -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
+}
+
+@media(max-width:991.8px) {
+    .errorsect img {
+        margin-bottom: 8px;
+    }
+
+    .errorsect .descr {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .errorsect {
+        padding: 115px 0 53px;
+    }
+
+    .errorsect .abstext {
+        font-size: 260px;
+        line-height: 340px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .errorsect {
+        height: calc(100vh - 60px);
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+
+    .errorsect img {
+        margin-bottom: 12px;
+    }
+
+    .errorsect .descr {
+        margin-bottom: 12px;
+    }
+
+    .errorsect .abstext {
+        font-size: 173px;
+        line-height: 260px;
+        top: 116px;
+    }
+
+
+}
+
+@media(max-width:360.8px) {
+    .errorsect .abstext {
+        font-size: 150px;
+    }
+
+    .errorsect img {
+        max-width: 160px;
+    }
+}

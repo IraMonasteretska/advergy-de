@@ -54,6 +54,7 @@ $(document).ready(function () {
             spaceBetween: 20,
             speed: 700,
             loop: true,
+            mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -106,27 +107,132 @@ $(document).ready(function () {
 
     // File upload
     if ($('*').is('.upload')) {
+        
         document.getElementById("FileAttachment").onchange = function () {
             document.getElementById("fileuploadurl").value = this.value.replace(/C:\\fakepath\\/i, '');
-            $('.uplwrap').addClass('uploaded');
+            $('.fp1 .uplwrap').addClass('uploaded');
             $('.filepopup__btns .bluebtn').prop('disabled', false);
 
-            document.querySelector(".testinput").value = this.value.replace(/C:\\fakepath\\/i, '')
+            document.querySelector(".fp1").value = this.value.replace(/C:\\fakepath\\/i, '')
+        };
+        // ----------------
+        document.getElementById("FileAttachment1").onchange = function () {
+            document.getElementById("fileuploadurl1").value = this.value.replace(/C:\\fakepath\\/i, '');
+            $('.fp2 .uplwrap').addClass('uploaded');
+            $('.filepopup__btns .bluebtn').prop('disabled', false);
+
+            document.querySelector(".fp2").value = this.value.replace(/C:\\fakepath\\/i, '')
+        };
+        // ----------------
+        document.getElementById("FileAttachment2").onchange = function () {
+            document.getElementById("fileuploadurl2").value = this.value.replace(/C:\\fakepath\\/i, '');
+            $('.fp3 .uplwrap').addClass('uploaded');
+            $('.filepopup__btns .bluebtn').prop('disabled', false);
+
+            document.querySelector(".fp3").value = this.value.replace(/C:\\fakepath\\/i, '')
+        };
+        // ----------------
+        document.getElementById("FileAttachment3").onchange = function () {
+            document.getElementById("fileuploadurl3").value = this.value.replace(/C:\\fakepath\\/i, '');
+            $('.fp4 .uplwrap').addClass('uploaded');
+            $('.filepopup__btns .bluebtn').prop('disabled', false);
+
+            document.querySelector(".fp4").value = this.value.replace(/C:\\fakepath\\/i, '')
         };
     }
 
-    $('.clearinput').click(function () {
+
+
+
+    $('.delete-btn').click(function(){
+        $(this).parent('.inputfield').find('input').val('');
+    });
+
+    $('.del1').click(function(){
         document.getElementById("fileuploadurl").value = '';
-        $('.uplwrap').removeClass('uploaded');
-        $('.filepopup__btns .bluebtn').prop('disabled', true);
+        $('.fp1 .uplwrap').removeClass('uploaded');
+        $('.fp1 .filepopup__btns .bluebtn').prop('disabled', true);
 
-        document.querySelector(".testinput").value = '';
+        document.querySelector("input.fp1").value = '';
+    })
+    $('.del2').click(function(){
+        document.getElementById("fileuploadurl1").value = '';
+        $('.fp2 .uplwrap').removeClass('uploaded');
+        $('.fp2 .filepopup__btns .bluebtn').prop('disabled', true);
 
+        document.querySelector("input.fp2").value = '';
+    })
+    $('.del3').click(function(){
+        document.getElementById("fileuploadurl2").value = '';
+        $('.fp3 .uplwrap').removeClass('uploaded');
+        $('.fp3 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp3").value = '';
+    })
+    $('.del4').click(function(){
+        document.getElementById("fileuploadurl3").value = '';
+        $('.fp4 .uplwrap').removeClass('uploaded');
+        $('.fp4 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp4").value = '';
+    })
+
+
+
+
+
+    $('.fp1 .clearinput').click(function () {
+        document.getElementById("fileuploadurl").value = '';
+        $('.fp1 .uplwrap').removeClass('uploaded');
+        $('.fp1 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp1").value = '';
+    });
+    $('.fp2 .clearinput').click(function () {
+        document.getElementById("fileuploadurl1").value = '';
+        $('.fp2 .uplwrap').removeClass('uploaded');
+        $('.fp2 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp2").value = '';
+    });
+    $('.fp3 .clearinput').click(function () {
+        document.getElementById("fileuploadurl2").value = '';
+        $('.fp3 .uplwrap').removeClass('uploaded');
+        $('.fp3 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp3").value = '';
+    });
+    $('.fp4 .clearinput').click(function () {
+        document.getElementById("fileuploadurl3").value = '';
+        $('.fp4 .uplwrap').removeClass('uploaded');
+        $('.fp4 .filepopup__btns .bluebtn').prop('disabled', true);
+
+        document.querySelector("input.fp4").value = '';
     });
 
 
 
 
+
+
+
+
+
+    // scroll to id
+    $(".categorynav ul li a").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
+
+    // show more text
+    $('.moretext').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('open');
+        $(this).prev('.descr').toggleClass('open');
+    });
 
 
 
