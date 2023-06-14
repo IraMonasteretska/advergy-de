@@ -104,13 +104,25 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    // File upload
+    if ($('*').is('.upload')) {
+        document.getElementById("FileAttachment").onchange = function () {
+            document.getElementById("fileuploadurl").value = this.value.replace(/C:\\fakepath\\/i, '');
+            $('.uplwrap').addClass('uploaded');
+            $('.filepopup__btns .bluebtn').prop('disabled', false);
 
+            document.querySelector(".testinput").value = this.value.replace(/C:\\fakepath\\/i, '')
+        };
+    }
 
+    $('.clearinput').click(function () {
+        document.getElementById("fileuploadurl").value = '';
+        $('.uplwrap').removeClass('uploaded');
+        $('.filepopup__btns .bluebtn').prop('disabled', true);
 
+        document.querySelector(".testinput").value = '';
 
-
-
-
+    });
 
 
 
@@ -230,6 +242,7 @@ $(document).ready(function () {
     }
 
 
+
     // scroll frame 
     if ($('*').is('.scrollbox')) {
         var header = $('.header');
@@ -252,13 +265,13 @@ $(document).ready(function () {
                 });
             }
         });
+
+        // delete frame 
+
+        $('.close-frame').on('click', function () {
+            $(this).closest('.scrollbox').remove();
+        });
     }
-
-    // delete frame 
-
-    $('.close-frame').on('click', function () {
-        $(this).closest('.scrollbox').remove();
-    });
 
     // confirmation form checkbox
     $('.customcheck').change(function () {
@@ -268,7 +281,6 @@ $(document).ready(function () {
             $('.formbtn').prop('disabled', true);
         }
     });
-
 
 
 
