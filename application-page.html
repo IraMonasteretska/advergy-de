@@ -125,9 +125,9 @@
                                             Anrede*
                                         </p>
                                         <select class="customselect">
-                                            <option value=""></option>
                                             <option value="Herr">Herr</option>
                                             <option value="Frau">Frau</option>
+                                            <option value="Divers">Divers</option>
                                         </select>
                                     </div>
                                     <div class="inputfield">
@@ -155,7 +155,8 @@
                                         <select class="customselect selectcountry">
                                             <option value="+38" data-image="img/new/country/ukraine.png">+38</option>
                                             <option value="+49" data-image="img/new/country/germany.png">+49</option>
-                                            <option value="+44" data-image="img/new/country/united-kingdom.png">+44</option>
+                                            <option value="+44" data-image="img/new/country/united-kingdom.png">+44
+                                            </option>
                                         </select>
                                         <input type="text">
                                     </div>
@@ -183,25 +184,34 @@
                                         <p>
                                             Lebenslauf*
                                         </p>
-                                        <input type="text" readonly>
+                                        <input type="text" readonly class="fp1">
+                                        <img class="upload-btn popup__btn" data-popup="fp1" src="img/new/Plus_blue.svg"
+                                            alt="upload">
+                                        <img class="delete-btn del1" src="img/new/delete_icon.svg" alt="delete">
                                     </div>
                                     <div class="inputfield upload-popup">
                                         <p>
                                             Referenzen
                                         </p>
-                                        <input type="text" readonly>
+                                        <input type="text" readonly class="fp2">
+                                        <img class="upload-btn popup__btn" data-popup="fp2" src="img/new/Plus_blue.svg" alt="upload">
+                                        <img class="delete-btn del2" src="img/new/delete_icon.svg" alt="delete">
                                     </div>
                                     <div class="inputfield upload-popup">
                                         <p>
                                             Zertifikate
                                         </p>
-                                        <input type="text" readonly>
+                                        <input type="text" readonly class="fp3">
+                                        <img class="upload-btn popup__btn" data-popup="fp3" src="img/new/Plus_blue.svg" alt="upload">
+                                        <img class="delete-btn del3" src="img/new/delete_icon.svg" alt="delete">
                                     </div>
                                     <div class="inputfield upload-popup">
                                         <p>
                                             Weitere Anhänge
                                         </p>
-                                        <input type="text" readonly>
+                                        <input type="text" readonly class="fp4">
+                                        <img class="upload-btn popup__btn" data-popup="fp4" src="img/new/Plus_blue.svg" alt="upload">
+                                        <img class="delete-btn del4" src="img/new/delete_icon.svg" alt="delete">
                                     </div>
                                     <div class="inputfield textarea">
                                         <p>
@@ -299,6 +309,195 @@
         </footer>
     </div>
 
+    <!-- modals -->
+    <div class="popup__window hide filepopup fp1">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__window hide filepopup fp2">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment1" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl1" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__window hide filepopup fp3">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment2" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl2" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__window hide filepopup fp4">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment3" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl3" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

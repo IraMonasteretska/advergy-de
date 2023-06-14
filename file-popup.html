@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File pop up</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="sublink">
+                                <a href="#">Für Unternehmen</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li class="subsublink">
+                                        <a href="#">
+                                            Unterlagen gestalten
+                                        </a>
+                                        <span class="linkarr"></span>
+                                        <ul class="subsubmenu">
+                                            <li><a href="#">Tipps für Contracting</a></li>
+                                            <li><a href="#">Tipps für Festanstellung</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Für Festangestellte</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Für Freelancer</a></li>
+                            <li><a href="#">Starte durch bei ADVERGY</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__partner">
+                    <img src="img/header-partner.svg" alt="partner">
+                </div>
+
+                <button class="burger burger2"><span></span></button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <a href="#" class="popup__btn" data-popup="filepopup">
+                    test
+                </a>
+                <br>
+
+                <input type="text" class="testinput">
+            </div>
+
+
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo-footer.svg" alt="img"></a>
+                    <p>
+                        Seit Gründung 2010 versteht sich die ADVERGY GmbH als starker Partner für Kunden und
+                        Kandidaten und widmet sich jeder Vakanz mit voller Aufmerksamkeit.
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Für Unternehmen</a>
+                                <ul>
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li><a href="#">Tipps für Contracting</a></li>
+                                    <li><a href="#">Tipps für Festanstellung</a></li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Für Festangestellte</a>
+                                <ul>
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">FÜR FREELANCER</a>
+                            </li>
+                            <li>
+                                <a href="#">Starte durch bei ADVERGY</a>
+                            </li>
+                            <li>
+                                <a href="#">KONTAKT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    2010. – 2022. © ADVERGY. Alle Rechte vorbehalten.
+                </p>
+                <ul>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- popup review of work -->
+    <div class="popup__window hide filepopup">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl" readonly>
+                            </div>
+                        </div>
+
+
+                        
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
