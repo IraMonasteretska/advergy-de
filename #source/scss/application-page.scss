@@ -157,6 +157,14 @@
             }
         }
 
+        &.checkboxes {
+            justify-content: start;
+
+            label+label {
+                margin-left: 40px;
+            }
+        }
+
         &.upload-popup {
             position: relative;
 
@@ -254,6 +262,12 @@
         input {
             max-width: 488px;
             width: 100%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(42, 42, 42, 0.75);
         }
 
         textarea {
@@ -265,6 +279,12 @@
             outline: none;
             border: 1px solid #D4DCE7;
             border-radius: 2px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(42, 42, 42, 0.75);
         }
 
         input[type="file"] {
@@ -291,7 +311,7 @@
 }
 
 
-p.thankyou-text {
+.inputblock p.thankyou-text {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -303,7 +323,16 @@ p.thankyou-text {
 
 // RESPONSIVE -------------------- //
 
+@media (max-width: 1399.8px) {
+    .ap-form .inputblock .inputfield.textarea p {
+        max-width: 220px;
+    }
+}
 @media (max-width: 991.8px) {
+    .ap-heroscreen>img {
+        object-position: 80% 50%;
+    }
+
     .ap-form form button {
         margin-top: 20px;
     }
@@ -454,9 +483,6 @@ p.thankyou-text {
         padding: 0 20px !important;
     }
 
-    .ap-heroscreen>img {
-        object-position: 80% 50%;
-    }
 }
 
 @media (max-width: 375px) {
@@ -479,5 +505,9 @@ p.thankyou-text {
     .ap-form form h3 {
         margin-bottom: 15px;
         padding-left: 50px;
+    }
+
+    .ap-form .inputblock .inputfield.checkboxes label+label {
+        margin-left: 20px;
     }
 }

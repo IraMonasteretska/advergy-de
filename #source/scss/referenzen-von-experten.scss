@@ -274,6 +274,10 @@
     }
 }
 
+.faqsaccordeon .faqsaccordeon__header p {
+    max-width: 550px;
+}
+
 @media(max-width:1300.8px) {
     .testimonials__box .descr {
         font-size: 14px;

@@ -147,7 +147,6 @@ $(document).ready(function () {
     $('.delete-btn').click(function(){
         $(this).parent('.inputfield').find('input').val('');
     });
-
     $('.del1').click(function(){
         document.getElementById("fileuploadurl").value = '';
         $('.fp1 .uplwrap').removeClass('uploaded');
@@ -213,11 +212,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
     // scroll to id
     $(".categorynav ul li a").on("click", function(e){
         e.preventDefault();
@@ -233,6 +227,41 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $(this).prev('.descr').toggleClass('open');
     });
+
+
+
+
+    
+
+    if ($('*').is('.guidelinesforcv__slider')) {
+        var swiper = new Swiper(".guidelinesforcv__sliderthumb", {
+            spaceBetween: 10,
+            slidesPerView: 8,
+            freeMode: true,
+            watchSlidesProgress: true,
+            direction: "vertical",
+          });
+          var swiper2 = new Swiper(".guidelinesforcv__slider", {
+            spaceBetween: 47,
+            slidesPerView: 1.8,
+            mousewheel: true,
+            slidesOffsetAfter:300,
+            thumbs: {
+              swiper: swiper,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+          });
+    }
+
+
+
+
+
+
+
 
 
 

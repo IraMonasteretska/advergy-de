@@ -64,10 +64,11 @@ h6 {
     background: #fff;
     border-radius: 8px;
     transition: 0.3s;
+    border: 1px solid #fff;
 
     &:hover {
-        // animation: pulse 2s infinite;
-        // -webkit-animation: pulse 2s infinite;
+        animation: pulse 1s;
+        -webkit-animation: pulse 1s;
     }
 }
 
@@ -82,7 +83,7 @@ h6 {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    background: #1C4B85;
+    background: rgb(28, 75, 133);
     border-radius: 8px;
     transition: 0.3s;
     border: none;
@@ -90,6 +91,8 @@ h6 {
 
     &:hover {
         background: #113867;
+        animation: pulse2 1s;
+        -webkit-animation: pulse2 1s;
     }
 
     &:disabled {
@@ -122,34 +125,26 @@ h6 {
     }
 }
 
-// @keyframes pulse {
-    
-//     0% {
-//         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
-//     }
+@keyframes pulse {
 
-//     70% {
-//         -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-//     }
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
+    }
 
-//     100% {
-//         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
-//     }
-// }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+}
 
-// @keyframes pulse2 {
-//     0% {
-//         -webkit-box-shadow: 0 0 0 0 rgba(28, 75, 133, .5);
-//     }
+@keyframes pulse2 {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(28, 75, 133, .5);
+    }
 
-//     70% {
-//         -webkit-box-shadow: 0 0 0 20px rgba(28, 75, 133, 0);
-//     }
-
-//     100% {
-//         -webkit-box-shadow: 0 0 0 0 rgba(28, 75, 133, .5);
-//     }
-// }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(28, 75, 133, 0);
+    }
+}
 
 h1 {
     font-weight: 600;
@@ -169,10 +164,19 @@ h2 {
     line-height: 78px;
 }
 
+.secttitlesm {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+}
+
 .text-center {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
 
 
 
@@ -190,13 +194,15 @@ h2 {
 }
 
 @media(max-width:1199.8px) {
-    h1, .secttitle {
+
+    h1,
+    .secttitle {
         font-size: 46px;
         line-height: 58px;
     }
 }
 
-@media(max-width:991.8px)  {
+@media(max-width:991.8px) {
     main.main {
         padding-top: 60px;
     }
@@ -207,7 +213,8 @@ h2 {
         // max-width: initial;
     }
 
-    h1, .secttitle {
+    h1,
+    .secttitle {
         font-size: 36px;
         line-height: 54px;
     }
@@ -231,7 +238,9 @@ h2 {
 }
 
 @media(max-width:360.8px) {
-    h1, .secttitle {
+
+    h1,
+    .secttitle {
         font-size: 28px;
         line-height: 38px;
     }
