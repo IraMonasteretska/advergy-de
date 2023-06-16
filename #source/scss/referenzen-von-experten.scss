@@ -2,7 +2,7 @@
     height: 500px;
 }
 
-.testimonials {
+.testimonials, .dd {
     padding: 32px 0 60px;
 
     .secttitle {
@@ -449,7 +449,8 @@
         margin-bottom: 3px;
     }
 
-    .testimonials .swiper-pagination .swiper-pagination-bullet {
+    .testimonials .swiper-pagination .swiper-pagination-bullet,
+    .dd .swiper-pagination .swiper-pagination-bullet {
         width: 12px;
         height: 12px;
         margin: 0 4px;

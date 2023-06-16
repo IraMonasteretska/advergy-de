@@ -190,4 +190,741 @@
 
 .offenevakanzen {
     padding: 60px 0;
+
+    .secttitle {
+        margin-bottom: 36px;
+    }
+}
+
+.offenevakanzen__groupbtns {
+    max-width: 477px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+
+    a {
+        display: inline-block;
+        padding: 12px 28px;
+        color: #1C4B85;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .accmanbtn {
+        background: #fff;
+        border: 2px solid #1C4B85;
+
+        &:hover {
+            background: #1C4B85;
+            color: #fff;
+        }
+    }
+
+    .recmanbtn {
+        background: #F2F4F8;
+        border: 2px solid #F2F4F8;
+
+        &:hover {
+            background: #1C4B85;
+            color: #fff;
+        }
+    }
+}
+
+.offenevakanzen__right {
+    padding-left: 26px;
+
+    .imgwrap {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 830px;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.offenevakanzen__accordeon {
+    height: 540px;
+    overflow: auto;
+    padding-top: 15px;
+    width: 100%;
+    padding-right: 30px;
+
+    &::-webkit-scrollbar {
+        background: #F2F4F8;
+        border-radius: 4px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #D4DCE7;
+        border-radius: 4px;
+    }
+
+    .faqsaccordeon .faqsaccordeon__header p {
+        color: #2A2A2A;
+    }
+
+    .faqsaccordeon .faqsaccordeon__row {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+    .faqsaccordeon .faqsaccordeon__header .accordeon__arrow {
+        top: -7px;
+    }
+
+    .faqsaccordeon .faqsaccordeon__body {
+        padding-right: 0;
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+.faqsaccordeon .faqsaccordeon__body {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(42, 42, 42, 0.75);
+}
+
+.offenevakanzen__left {
+    .bluebtn {
+        margin-top: 24px;
+    }
+}
+
+.recprocess {
+    background: #F2F4F8;
+    padding: 60px 0;
+}
+
+.recprocess__left,
+.recprocess__right {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 auto;
+}
+
+.recprocess__left {
+    width: 46%;
+
+    img {
+        width: 100%;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.recprocess__right {
+    width: 54%;
+
+    .wrapper {
+        padding-left: 20px;
+    }
+
+    .secttitle {
+        margin-bottom: 12px;
+    }
+
+
+
+    .descr {
+        color: #858585;
+        margin-bottom: 30px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+}
+
+.recprocess__box {
+    margin-bottom: 35px;
+    padding: 40px 32px;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(28, 75, 133, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .recprocess__boxleft {
+        flex: 0 0 auto;
+        width: calc(100% - 76px);
+        padding-right: 32px;
+
+        .title {
+            margin-bottom: 4px;
+            color: #2A2A2A;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .descr {
+            margin: 0;
+            color: #2A2A2A;
+        }
+    }
+
+    .recprocess__boxright {
+        flex: 0 0 auto;
+        width: 76px;
+        text-align: right;
+        border-left: 1px solid #D4DCE7;
+
+        span {
+            color: #1C4B85;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            display: inline-block;
+            width: 44px;
+            text-align: center;
+        }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+        .recprocess__boxright {
+            order: 1;
+            text-align: left;
+            border-right: 1px solid #D4DCE7;
+            border-left: none;
+        }
+
+        .recprocess__boxleft {
+            order: 2;
+            padding-right: 0;
+            padding-left: 32px;
+        }
+    }
+
+
+
+
+}
+
+.subtitlesect {
+    position: relative;
+    color: #1C4B85;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 92px;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 4px;
+        background: #1C4B85;
+        position: absolute;
+        left: 0;
+        top: 14px;
+        margin-bottom: 12px;
+    }
+}
+
+.futjobplace {
+    padding: 60px 0;
+    background: #F2F4F8;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 585px;
+        background: #fff;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .secttitle {
+        margin-bottom: 12px;
+    }
+
+    .subtitlesect {
+        margin-bottom: 12px;
+    }
+
+    .futjobplace__descr {
+        max-width: 590px;
+        margin-bottom: 40px;
+        color: rgba(42, 42, 42, 0.75);
+        text-align: justify;
+    }
+
+    .futjobplace__slideimg {
+        height: 272px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .futjobplace__slidedescr {
+        background: #fff;
+        padding: 16px 24px 13px 24px;
+
+        .title {
+            margin-bottom: 3px;
+            color: #2A2A2A;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .descr {
+            color: #7F7F7F;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .futjobplace-slider {
+        overflow: visible;
+    }
+
+}
+
+.futjobplace-sliderwrap.dd {
+    padding: 0;
+}
+
+.arbeitsplatz {
+    padding: 60px 0 0 0;
+
+    .secttitle {
+        margin-bottom: 12px;
+    }
+}
+
+.arbeitsplatz__sliderwrap {
+    padding-top: 60px;
+}
+
+.arbeitsplatz__slider {
+    padding-bottom: 0 !important;
+
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.arbeitsplatz__slider.dd {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    .swiper-pagination {
+        bottom: 25px;
+    }
+}
+
+.faqs.faqs_advergy {
+    .secttitle {
+        color: #2A2A2A;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 63px;
+        margin-bottom: 12px;
+    }
+
+    .faqs__subtitle {
+        margin-bottom: 12px;
+    }
+}
+
+
+@media(max-width:1300.8px) {
+    .recprocess__box {
+        margin-bottom: 26px;
+    }
+
+    .recprocess__box {
+        padding: 33px 32px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .wasmitarbeiter__box {
+        padding: 20px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .joinus__leftsect .dtext {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .offenevakanzen__groupbtns a {
+        font-size: 16px;
+    }
+
+    .recprocess__box {
+        padding: 20px 25px;
+        margin-bottom: 23px;
+    }
+
+    .recprocess__box .recprocess__boxleft .descr {
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    .futjobplace:after {
+        height: 533px;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+    .welcomesect.smheight.ja {
+        height: 475px;
+        min-height: initial;
+
+        .welcomesect__info {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .categorynav.ja ul li {
+        &:after {
+            transform: translate(2px, -50%);
+        }
+
+        &:nth-child(3) {
+            &::after {
+                display: inline-block;
+            }
+        }
+
+        &:nth-child(4) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .wasmitarbeiter__box {
+        margin-bottom: 20px;
+    }
+
+    .wasmitarbeiter__info {
+        margin-top: 0;
+    }
+
+    .joinus {
+        padding: 60px 0 40px;
+    }
+
+    .joinusbox .joinusbox__left p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .joinusbox .joinusbox__left {
+        padding: 15px 10px 15px 20px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .joinusbox .joinusbox__right {
+        padding: 15px 10px;
+    }
+
+    .joinusbox {
+        margin-bottom: 20px;
+        display: block;
+        padding: 20px;
+
+        .joinusbox__left {
+            width: 100%;
+            padding: 0;
+        }
+
+        .joinusbox__right {
+            width: 100%;
+            padding: 0;
+            height: auto;
+            min-height: initial;
+
+            &::after {
+                display: none;
+            }
+        }
+
+    }
+
+    .joinus__leftsect img {
+        margin-bottom: 40px;
+    }
+
+    .offenevakanzen__accordeon {
+        height: auto;
+    }
+
+    .offenevakanzen__left {
+        margin-bottom: 30px;
+
+        .bluebtn {
+            margin-top: 0;
+        }
+    }
+
+    .offenevakanzen__right {
+        padding-left: 0;
+
+        .imgwrap {
+            height: 300px;
+        }
+    }
+
+    .recprocess__left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        order: 2;
+
+        img {
+            width: calc(50% - 10px);
+            margin: 0;
+        }
+    }
+
+    .recprocess__right {
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .recprocess__right .wrapper {
+        padding-left: 0;
+    }
+
+    .arbeitsplatz__sliderwrap {
+        padding-top: 30px;
+    }
+
+    .wasmitarbeiter,
+    .offenevakanzen,
+    .recprocess,
+    .futjobplace {
+        padding: 40px 0;
+    }
+
+    .arbeitsplatz {
+        padding-top: 40px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .joinus__leftsect {
+        .dtext {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .whitebtn {
+            font-size: 16px;
+        }
+    }
+
+    .arbeitsplatz__slider.dd .swiper-pagination {
+        bottom: 10px;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .welcomesect.smheight.ja {
+        height: calc(100vh - 60px);
+    }
+
+    .wasmitarbeiter__box {
+        margin-bottom: 10px;
+    }
+
+    .wasmitarbeiter__box .rating span {
+        font-size: 16px;
+    }
+
+    .wasmitarbeiter__box .rating {
+        margin-bottom: 0;
+
+        .stars img {
+            width: 20px;
+        }
+    }
+
+    .wasmitarbeiter .secttitle {
+        margin-bottom: 12px;
+    }
+
+    .joinus {
+        padding: 40px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 75, 133, 0.5);
+        }
+    }
+
+    .joinus__leftsect {
+        margin-bottom: 20px;
+
+        img {
+            margin-bottom: 20px;
+            width: 60%;
+        }
+    }
+
+    .offenevakanzen__groupbtns a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .offenevakanzen__accordeon .faqsaccordeon .faqsaccordeon__header .accordeon__arrow {
+        top: -9px;
+    }
+
+    .offenevakanzen__accordeon .faqsaccordeon .faqsaccordeon__body {
+        padding-top: 20px;
+
+        ul {
+            margin-top: 0;
+        }
+    }
+
+    .subtitlesect {
+        font-size: 18px;
+        padding-left: 65px;
+        margin-bottom: 12px;
+
+        &::after {
+            width: 52px;
+        }
+
+    }
+
+    .recprocess__box .recprocess__boxright span {
+        font-size: 36px;
+    }
+
+    .recprocess__box .recprocess__boxright {
+        width: 60px;
+    }
+
+    .recprocess__box .recprocess__boxleft {
+        width: calc(100% - 60px);
+    }
+
+    .recprocess__box .recprocess__boxleft {
+        padding-right: 20px;
+    }
+
+    .recprocess__box {
+        margin-bottom: 15px;
+
+        .recprocess__boxleft .title {
+            font-size: 18px;
+        }
+    }
+
+    .recprocess__box:nth-child(3) .recprocess__boxleft,
+    .recprocess__box:nth-child(4) .recprocess__boxleft {
+        padding-left: 20px;
+    }
+
+    .futjobplace .futjobplace__descr {
+        margin-bottom: 20px;
+    }
+
+    .faqs.faqs_advergy .secttitle {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .wasmitarbeiter__info .bluebtn img {
+        width: 76px;
+    }
+
+}
+
+@media(max-width:370.8px) {
+    .offenevakanzen__groupbtns {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        a {
+            width: 100%;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .offenevakanzen .secttitle {
+        margin-bottom: 20px;
+    }
 }
