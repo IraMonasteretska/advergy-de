@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Look for a Job</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
@@ -63,7 +63,10 @@
 
 
             <section class="js-heroscreen">
-                <img src="img/new/job_search_heroimage.jpg" alt="img">
+                <picture class="js-heroscreen__bg">
+                    <source srcset="img/new/job_heroscreen_bg_mobile.jpg" media="(max-width: 768px)">
+                    <img src="img/new/job_search_heroimage.jpg" alt="img">
+                </picture>
                 <div class="js-heroscreen__info cpl">
                     <div class="js-heroscreen__infowrap">
                         <h1>
@@ -112,50 +115,309 @@
             </section>
 
             <section class="js-result">
+
+                <div class="js-result__filter-frame scrollbox open-filter">
+                    <h3>
+                        Deine Suche verfeinern
+                    </h3>
+                    <p>
+                        4
+                    </p>
+                    <span>
+                        Click to open filters
+                    </span>
+                </div>
+
+                <div class="js-result__form scrollbox">
+                    <div class="js-result__form-head">
+                        <div class="mobile-frame">
+                            <img src="img/new/filter_icon.svg" alt="icon">
+                            <div class="mobile-frame__col">
+                                <h3>
+                                    Deine Suche verfeinern
+                                </h3>
+                                <span class="text--hide">
+                                    Click to open filters
+                                </span>
+                                <span class="text--open">
+                                    Click to hide filters
+                                </span>
+                            </div>
+                            <p>
+                                4
+                            </p>
+                        </div>
+                        <h3>
+                            Deine Suche verfeinern
+                        </h3>
+                        <span class="hideform-btn">
+                            Schließen
+                        </span>
+                    </div>
+                    <div class="js-result__form-wrap">
+                        <form>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item active">
+                                    <div class="js-result__form-name">
+                                        Funktion
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <p>
+                                            Jobtitel/Stichwort
+                                        </p>
+                                        <div class="inputfield">
+                                            <input type="text" placeholder="QA Engineer">
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Nur über Jobtitel suchen
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item active">
+                                    <div class="js-result__form-name">
+                                        Arbeitsort
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <div class="inputblock">
+                                            <div class="inputfield">
+                                                <p>
+                                                    Umgebung 1
+                                                </p>
+                                                <a class="inputfield-delete" href="#">
+                                                    <img src="img/new/trash.svg" alt="delete">
+                                                </a>
+                                            </div>
+
+                                            <!-- Search by region  -->
+                                            <div class="inputfield">
+                                                <label>
+                                                    <input class="customradio" checked type="radio"
+                                                        name="js-search-region">
+                                                    <span>
+                                                        Suche nach Region
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    <input class="customradio" type="radio" name="js-search-region">
+                                                    <span>
+                                                        Suche nach Postleitzahl
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="inputfield">
+                                                <input type="text" placeholder="z.B. Berlin">
+                                            </div>
+                                            <div class="inputfield">
+                                                <span>
+                                                    Im Umkreis von
+                                                </span>
+                                                <select class="customselect">
+                                                    <option value="20 km">20 km</option>
+                                                    <option value="50 km">50 km</option>
+                                                    <option value="70 km">70 km</option>
+                                                    <option value="100 km">100 km</option>
+                                                    <option value=">150km">>150km</option>
+                                                </select>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="inputblock">
+                                            <div class="inputfield">
+                                                <p>
+                                                    Umgebung 2
+                                                </p>
+                                                <a class="inputfield-delete" href="#">
+                                                    <img src="img/new/trash.svg" alt="delete">
+                                                </a>
+                                            </div>
+
+                                            <!-- Search by index  -->
+                                            <div class="inputfield">
+                                                <label>
+                                                    <input class="customradio" type="radio" name="js-search-index">
+                                                    <span>
+                                                        Suche nach Region
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    <input class="customradio" checked type="radio"
+                                                        name="js-search-index">
+                                                    <span>
+                                                        Suche nach Postleitzahl
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="inputfield">
+                                                <input type="text" placeholder="z.B 39074">
+                                            </div>
+                                            <div class="inputfield">
+                                                <span>
+                                                    Im Umkreis von
+                                                </span>
+                                                <select class="customselect">
+                                                    <option value="20 km">20 km</option>
+                                                    <option value="50 km">50 km</option>
+                                                    <option value="70 km">70 km</option>
+                                                    <option value="100 km">100 km</option>
+                                                    <option value=">150km">>150km</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputblock">
+                                            <p>Weitere Orte hinzufügen</p>
+                                            <span>Hamburg</span>
+                                            <span>Berlin</span>
+                                            <a href="#">+</a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item">
+                                    <div class="js-result__form-name">
+                                        Area of Expertise
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    IT (Information Technology)
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Construction and Property
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Finance
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item ">
+                                    <div class="js-result__form-name">
+                                        Karrierestufe
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Geringe Berufserfahrung
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Mit Berufserfahrung
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Mit Führungsverantwortung
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item">
+                                    <div class="js-result__form-name">
+                                        Worktype
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Nur 100% remote arbeiten.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Flexibel von Zuhause oder Office arbeiten
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-result__form-content">
+                                <div class="js-result__form-item">
+                                    <div class="js-result__form-name">
+                                        Anstellungsform
+                                    </div>
+                                    <div class="js-result__form-body">
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Vollzeit
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="inputfield">
+                                            <label>
+                                                <input type="checkbox" name="jobtitel" class="customcheck">
+                                                <span>
+                                                    Teilzeit
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="js-result__form-bottom">
+                            <p>
+                                Keine passende Perspektive gefunden? <br>
+                                Wir finden sie gemeinsam.
+                            </p>
+                            <a href="#">
+                                Jetzt Traumposition anfragen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-xl-8">
                             <div class="js-result__wrapper">
                                 <h2>
                                     Deine individuelle Jobsuche
                                 </h2>
-
-                                <div class="js-result__item">
-                                    <div class="js-result__item-head">
-                                        <div class="js-result__item-img">
-                                            <img src="img/new/job_result_item.svg" alt="image">
-                                        </div>
-                                        <div class="js-result__item-title">
-                                            <h4>
-                                                Senior Test Automation Engineer
-                                            </h4>
-                                            <p>
-                                                Hamburg
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="js-result__item-content">
-                                        <p>
-                                            The global company has been manufacturing sustainable products for over 100
-                                            years. With more than 3,000 employees at over 50 locations worldwide, it is
-                                            financially stable and has high growth dynamics.
-                                        </p>
-                                        <p>
-                                            Here you take on responsibility and can take your own initiatives without
-                                            being slowed...
-                                        </p>
-
-                                    </div>
-                                    <div class="js-result__item-bottom">
-                                        <a href="#">
-                                            Öffne Vorschau
-                                        </a>
-                                        <a href="#" class="popup__btn" data-popup="popup-review">
-                                            Vollständige Jobansicht
-                                            <img src="img/new/aroow_right_blue.svg" alt="arrow">
-                                        </a>
-                                    </div>
-                                </div>
 
                                 <div class="js-result__item">
                                     <div class="js-result__item-head">
@@ -492,267 +754,61 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-result__form">
-                    <div class="js-result__form-head">
-                        <h3>
-                            Deine Suche verfeinern
-                        </h3>
-                        <a href="#">
-                            Schließen
-                        </a>
-                    </div>
-                    <form>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Funktion
-                                </div>
-                                <div class="js-result__form-body">
-                                    <p>
-                                        Jobtitel/Stichwort
-                                    </p>
-                                    <div class="inputfield">
-                                        <input type="text" placeholder="QA Engineer">
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Nur über Jobtitel suchen
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Arbeitsort
-                                </div>
-                                <div class="js-result__form-body">
-                                    <div class="inputblock">
-                                        <div class="inputfield">
-                                            <p>
-                                                Umgebung 1
-                                            </p>
-                                            <a class="inputfield-delete" href="#">
-                                                <img src="img/new/trash.svg" alt="delete">
-                                            </a>
-                                        </div>
-                                        <div class="inputfield">
-                                            <label>
-                                                <input class="customradio" type="radio" name="js-search1">
-                                                <span>
-                                                    Suche nach Region
-                                                </span>
-                                            </label>
-                                            <label>
-                                                <input class="customradio" type="radio" name="js-search1">
-                                                <span>
-                                                    Suche nach Postleitzahl
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="inputfield">
-                                            <input type="text" placeholder="z.B. Berlin">
-                                        </div>
-                                        <div class="inputfield">
-                                            <span>
-                                                Im Umkreis von
-                                            </span>
-                                            <select class="customselect">
-                                                <option value=""></option>
-                                                <option value="20 km">20 km</option>
-                                                <option value="50 km">50 km</option>
-                                                <option value="70 km">70 km</option>
-                                                <option value="100 km">100 km</option>
-                                                <option value=">150km">>150km</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="inputblock">
-                                        <div class="inputfield">
-                                            <p>
-                                                Umgebung 2
-                                            </p>
-                                            <a class="inputfield-delete" href="#">
-                                                <img src="img/new/trash.svg" alt="delete">
-                                            </a>
-                                        </div>
-                                        <div class="inputfield">
-                                            <label>
-                                                <input class="customradio" type="radio" name="js-search1">
-                                                <span>
-                                                    Suche nach Region
-                                                </span>
-                                            </label>
-                                            <label>
-                                                <input class="customradio" type="radio" name="js-search1">
-                                                <span>
-                                                    Suche nach Postleitzahl
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="inputfield">
-                                            <input type="text" placeholder="z.B. Berlin">
-                                        </div>
-                                        <div class="inputfield">
-                                            <span>
-                                                Im Umkreis von
-                                            </span>
-                                            <select class="customselect">
-                                                <option value=""></option>
-                                                <option value="20 km">20 km</option>
-                                                <option value="50 km">50 km</option>
-                                                <option value="70 km">70 km</option>
-                                                <option value="100 km">100 km</option>
-                                                <option value=">150km">>150km</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="inputblock">
-                                        <p>Weitere Orte hinzufügen</p>
-                                        <span>Hamburg</span>
-                                        <span>Berlin</span>
-                                        <a href="#">+</a>
-                                    </div>
-                                    
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Area of Expertise
-                                </div>
-                                <div class="js-result__form-body">
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                IT (Information Technology)
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Construction and Property
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Finance
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Karrierestufe
-                                </div>
-                                <div class="js-result__form-body">
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Geringe Berufserfahrung
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Mit Berufserfahrung
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Mit Führungsverantwortung
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Worktype
-                                </div>
-                                <div class="js-result__form-body">
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Nur 100% remote arbeiten.
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Flexibel von Zuhause oder Office arbeiten
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-result__form-content">
-                            <div class="js-result__form-item">
-                                <div class="js-result__form-name">
-                                    Anstellungsform
-                                </div>
-                                <div class="js-result__form-body">
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Vollzeit
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="inputfield">
-                                        <label>
-                                            <input type="checkbox" name="jobtitel" class="customcheck">
-                                            <span>
-                                                Teilzeit
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="js-result__form-bottom">
-                        <p>
-                            Keine passende Perspektive gefunden? <br>
-                            Wir finden sie gemeinsam.
-                        </p>
-                        <a href="#">
-                            Jetzt Traumposition anfragen
-                        </a>
-                    </div>
-                </div>
             </section>
 
-
         </main>
+
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo-footer.svg" alt="img"></a>
+                    <p>
+                        Seit Gründung 2010 versteht sich die ADVERGY GmbH als starker Partner für Kunden und
+                        Kandidaten und widmet sich jeder Vakanz mit voller Aufmerksamkeit.
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Für Unternehmen</a>
+                                <ul>
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li><a href="#">Tipps für Contracting</a></li>
+                                    <li><a href="#">Tipps für Festanstellung</a></li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Für Festangestellte</a>
+                                <ul>
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">FÜR FREELANCER</a>
+                            </li>
+                            <li>
+                                <a href="#">Starte durch bei ADVERGY</a>
+                            </li>
+                            <li>
+                                <a href="#">KONTAKT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    2010. – 2022. © ADVERGY. Alle Rechte vorbehalten.
+                </p>
+                <ul>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
 
     </div>
 
@@ -775,10 +831,14 @@
                     </div>
                     <div class="popup__content">
                         <p>
-                            For our well-known customer, who is active in the fiber and paper industry, we are currently looking for an IT system administrator for a permanent position in the Aalen area.
+                            For our well-known customer, who is active in the fiber and paper industry, we are currently
+                            looking for an IT system administrator for a permanent position in the Aalen area.
                         </p>
                         <p>
-                            The global company has been manufacturing sustainable products for over 100 years. With more than 3,000 employees at over 50 locations worldwide, it is financially stable and has high growth dynamics. Here you take on responsibility and can take your own initiatives without being slowed down by a lot of bureaucracy. 
+                            The global company has been manufacturing sustainable products for over 100 years. With more
+                            than 3,000 employees at over 50 locations worldwide, it is financially stable and has high
+                            growth dynamics. Here you take on responsibility and can take your own initiatives without
+                            being slowed down by a lot of bureaucracy.
                         </p>
                         <h3>
                             Tasks
@@ -808,7 +868,8 @@
                                 Work experience in the IT sector
                             </li>
                             <li>
-                                Competence in dealing with Microsoft products – Windows, Office, Outlook and SharePoint...
+                                Competence in dealing with Microsoft products – Windows, Office, Outlook and
+                                SharePoint...
                             </li>
                         </ul>
                         <h3>
