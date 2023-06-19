@@ -1,11 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="sublink">
+                                <a href="#">Für Unternehmen</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li class="subsublink">
+                                        <a href="#">
+                                            Unterlagen gestalten
+                                        </a>
+                                        <span class="linkarr"></span>
+                                        <ul class="subsubmenu">
+                                            <li><a href="#">Tipps für Contracting</a></li>
+                                            <li><a href="#">Tipps für Festanstellung</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Für Festangestellte</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Für Freelancer</a></li>
+                            <li><a href="#">Starte durch bei ADVERGY</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__partner">
+                    <img src="img/header-partner.svg" alt="partner">
+                </div>
+
+                <button class="burger burger2"><span></span></button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="mainwelcscreen">
+                <video autoplay muted loop>
+                    <source src="video/web-vidV2.mp4" type="video/ogg">
+                </video>
+                <div class="container">
+                    <h1>
+                        Advergy - <br>
+                        Can‘t stop recruiting
+                    </h1>
+                    <p>
+                        ADVERGY - Ihr kompetenter Partner in Sachen Recruiting. Spezialisiert auf die IT & Construction
+                        begleiten wir täglich Menschen und Unternehmen auf dem Weg des Erfolgs.
+                    </p>
+
+                    <a href="#" class="whitebtn">Kontakt aufnehmen</a>
+                </div>
+            </section>
+
+            <div class="ratingsection">
+                <div class="container">
+                    <div class="ratingsectionwrap">
+                        <div class="wasmitarbeiter__box">
+                            <div class="rating">
+                                <span>4.5</span>
+                                <div class="stars">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star-half.png" alt="star">
+                                </div>
+                            </div>
+                            <p>kunu score</p>
+                            <p class="descr">75 reviews</p>
+                        </div>
+                        <div class="wasmitarbeiter__box lr">
+                            <div class="rating">
+                                <span>100 %</span>
+                                <div class="linerating">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p>recommendation</p>
+                            <p class="descr">Last 2 years</p>
+                        </div>
+                        <div class="wasmitarbeiter__box tc">
+                            <div class="topcomp">
+                                <img src="img/topcompany.png" alt="img">
+                                <p>Top 2022 Company
+                                    Award</p>
+                            </div>
+
+                        </div>
+                        <div class="wasmitarbeiter__box">
+                            <div class="rating">
+                                <span>4.3</span>
+                                <div class="stars">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star-half.png" alt="star">
+                                </div>
+                            </div>
+                            <p>Google reviews score</p>
+                            <p class="descr">105 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="rersperf">
+                <div class="rersperf__topsect">
+                    <img src="img/mainpic1.jpg" alt="img">
+                    <div class="rersperf__topsectdescr cpl">
+                        <div class="textwrap">
+                            <h3 class="secttitle">
+                                Personal in Perfektion
+                            </h3>
+                            <p class="subtitlesect">Wir bringen Sie weiter – jeden Tag!</p>
+                            <p class="descr">
+                                Ihren individuellen Bedürfnissen und Ansprüchen begegnen wir durch unsere jahrelange
+                                Expertise im Recruiting mit viel Knowhow und einer riesigen Portion Leidenschaft. Wir
+                                erkennen Potentiale und entwickeln diese mit Ihnen gemeinsam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rersperf__botsect">
+                    <div class="container">
+                        <div class="row sp10">
+                            <div class="col-lg-3">
+                                <div class="rersperfbox">
+                                    <div class="textwrap">
+                                        <img src="img/rersperf1.svg" alt="icon">
+                                        <p class="title">Für Unternehmen</p>
+                                        <p class="descr">
+                                            Durch ausgefeilte Prozesse und umfassenden Research decken wir Ihren Bedarf.
+                                        </p>
+                                    </div>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="rersperfbox">
+                                    <div class="textwrap">
+                                        <img src="img/rersperf2.svg" alt="icon">
+                                        <p class="title">Für Festangestellte</p>
+                                        <p class="descr">
+                                            Durch unsere Branchenspezialisierung kennen wir den Markt genau und finden
+                                            Ihren
+                                            passenden Job!
+                                        </p>
+                                    </div>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="rersperfbox">
+                                    <div class="textwrap">
+                                        <img src="img/rersperf3.svg" alt="icon">
+                                        <p class="title">Für Freelancer</p>
+                                        <p class="descr">
+                                            Mit Vollgas Richtung neuem Traumprojekt!
+                                        </p>
+                                    </div>
+
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="rersperfbox">
+                                    <div class="textwrap">
+                                        <img src="img/rersperf4.svg" alt="icon">
+                                        <p class="title">Starte durch bei ADVERGY</p>
+                                        <p class="descr">
+                                            Werde Teil eines großartigen Teams und einer unvergleichlichen
+                                            Erfolgsgeschichte!
+                                        </p>
+                                    </div>
+
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profregr">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="imgwrap">
+                                <img src="img/seit2010.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="profregr__text">
+                                <h3 class="secttitle">
+                                    Professionelles Recruiting – deutschlandweit
+                                </h3>
+                                <p class="subtitlesect">
+                                    In den Bereichen IT und Construction
+                                </p>
+                                <p class="descr">
+                                    Seit 2010 beraten wir Unternehmen und Kandidaten erfolgreich. Das Entwickeln
+                                    individueller Lösungen für die verschiedensten Herausforderungen macht uns
+                                    einzigartig. Besonders spannend für unsere Kandidaten ist unser großes Portfolio an
+                                    Partnerunternehmen. Vom Start-Up bis hin zum Konzern. Mit uns findet jede Fachkraft
+                                    den Traumjob.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="expertize">
+                <div class="expertize__box">
+                    <div class="imgwrap">
+                        <img src="img/expertize1.jpg" alt="img">
+                    </div>
+                    <div class="expertize__descrblock cpl">
+                        <p class="secttitlesm">Unsere Expertise<br> in der IT</p>
+                        <p class="subtitlesect">Ihr Code zum Erfolg</p>
+                        <p class="descr">
+                            Als absoluter Spezialist im IT-Recruiting decken wir alle Bereiche der IT vollumfänglich ab
+                            und bieten eine riesige Bandbreite an spannenden Jobs.
+                        </p>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Senior Java Developer (m/w/d) | Düsseldorf
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Java Software Developer (m/w/d) | Hannover
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        DevOps Engineer (up to 100% remote) (m/f/d) | nationwide
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Java Software Developer (m/w/d) | Hannover
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="bluebtn">Alle IT-Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expertize__box">
+                    <div class="imgwrap">
+                        <img src="img/expertize2.jpg" alt="img">
+                    </div>
+                    <div class="expertize__descrblock cpr">
+                        <p class="secttitlesm">Unsere Expertise im Bereich Construction</p>
+                        <p class="subtitlesect">Ihr Fundament zum Fortschritt</p>
+                        <p class="descr">
+                            Mit unserem umfassenden Knowhow im Bauwesen und allen dazugehörigen Berufsfeldern
+                            unterstützen wir unsere Kandidaten dabei stetig voranzukommen.
+                        </p>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Senior Java Developer (m/w/d) | Düsseldorf
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Java Software Developer (m/w/d) | Hannover
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        DevOps Engineer (up to 100% remote) (m/f/d) | nationwide
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="expertize__vac">
+                                    <p>
+                                        Java Software Developer (m/w/d) | Hannover
+                                    </p>
+                                    <a href="#">Erfahre mehr <img src="img/arrow-forward.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="bluebtn">Alle Constrution-Jobs</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="referenzensect bluebg">
+                <img class="dotswavebg" src="img/dotwwave.png" alt="bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="referenzensect__left">
+                                <div class="textwrap">
+                                    <h3 class="secttitle">Referenzen</h3>
+                                    <p class="subtitlesect">Gute Arbeit wird geschätzt!</p>
+                                    <p class="descr">
+                                        Das sagen unsere Kunden und Kandidaten über uns.
+                                    </p>
+                                </div>
+                                <div class="slarrws">
+                                    <div class="swiper-button-prev msl1"></div>
+                                    <div class="swiper-button-next msl1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="referenzensect__right">
+                                <div class="swiper referenzensect__slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="referenzensect__slide">
+                                                <div class="sltextwrap">
+                                                    <p class="title">
+                                                        Kevin Niermann,<br>
+                                                        Software Developer
+                                                    </p>
+                                                    <div class="descr">
+                                                        <p>
+                                                            Hatte Kontakt mit Nieck Narward, er hat mir schnell und
+                                                            unkompliziert meinen Traumjob gefunden!
+                                                            Super nett und hilfsbereit, hat mir viele nützliche Tipps
+                                                            mitgegeben und mich top betreut! Immer wieder gerne.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="referenzensect__slide">
+                                                <div class="sltextwrap">
+                                                    <p class="title">
+                                                        Eric Papstein, <br>
+                                                        DEMV
+                                                    </p>
+                                                    <div class="descr">
+                                                        <p>
+                                                            Für mich als Kunde die beste Personalberatung in Hamburg.
+                                                            Mein Ansprechpartner Micha M. tritt stets sehr verbindlich
+                                                            und zuverlässig auf und die Qualität der Kandidatenprofile
+                                                            ist gut. Aus Kundensicht kann ich Advergy absolut
+                                                            weiterempfehlen. Weiter So !!!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="referenzensect__slide">
+                                                <div class="sltextwrap">
+                                                    <p class="title">
+                                                        Denise Völker, <br>
+                                                        Systemadministratorin
+                                                    </p>
+                                                    <div class="descr">
+                                                        <p>
+                                                            Für mich als Kunde die beste Personalberatung in Hamburg.
+                                                            Mein Ansprechpartner Micha M. tritt stets sehr verbindlich
+                                                            und zuverlässig auf und die Qualität der Kandidatenprofile
+                                                            ist gut. Aus Kundensicht kann ich Advergy absolut
+                                                            weiterempfehlen. Weiter So !!!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="referenzensect__slide">
+                                                <div class="sltextwrap">
+                                                    <p class="title">
+                                                        Denise Völker, <br>
+                                                        Systemadministratorin
+                                                    </p>
+                                                    <div class="descr">
+                                                        <p>
+                                                            Großartige Beratung seitens des Herrn Gotthardt. Wir hatten
+                                                            innerhalb von kürzester Zeit das Portfolio erstellt und die
+                                                            ersten Angebote kamen bereits rein. Nach der ersten
+                                                            Durchsicht hatten wir dann sehr informative und hilfreiche
+                                                            Vorbereitungsgespräche. Auch während der
+                                                            Vorstellungsgespräche wurde man wunderbar begleitet. Kann
+                                                            Sie nur empfehlen. Danke nochmal!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="referenzensect__slide">
+                                                <div class="sltextwrap">
+                                                    <p class="title">
+                                                        Hauke Klug, <br>
+                                                        Hamburg Wasser
+                                                    </p>
+                                                    <div class="descr">
+                                                        <p>
+                                                            Absolute Weiterempfehlung!
+                                                            Ich konnte bereits diverse Vakanzen in unterschiedlichen
+                                                            Bereichen durch von Advergy vermittelte Kandidaten besetzen.
+                                                            Weiter so!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="googlereviews">
+                <div class="container">
+                    <div class="googlereviews__head">
+                        <p class="googlereviews__title">Google reviews</p>
+                        <div class="googlereviews__arrws">
+                            <div class="swiper-button-prev msl2"></div>
+                            <div class="swiper-button-next msl2"></div>
+                        </div>
+                    </div>
+                    <div class="googlereviews__body">
+                        <div class="swiper googlereviews__slider ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="googlereview popup__btn" data-popup="rewiewpopup">
+                                        <div class="googlereview__header">
+                                            <div class="googlereview__ava" style="background: #F6BE5E;">
+                                                F
+                                            </div>
+                                            <div class="googlereview__person">
+                                                <p class="name">Fabio Muller</p>
+                                                <p class="date">2 months ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="googlereview__descr">
+                                            <div class="stars">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                            </div>
+                                            <span>
+                                                Ich bin mega zufrieden!
+                                                Die Zusammenarbeit mit der Advergy lief höchst professionell.
+                                                Besonders
+                                                hervorzuheben ist dabei Kevin Gotthardt, der mich auf meinem Weg
+                                                perfekt
+                                                beraten hat! Spitzenklasse, weiter so!
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="googlereview popup__btn" data-popup="rewiewpopup">
+                                        <div class="googlereview__header">
+                                            <div class="googlereview__ava" style="background: #3BD79F;">
+                                                M
+                                            </div>
+                                            <div class="googlereview__person">
+                                                <p class="name">M O</p>
+                                                <p class="date">7 months ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="googlereview__descr">
+                                            <div class="stars">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                            </div>
+                                            <span>
+                                                Vom ersten Kontakt an, hat man sich hier sehr wohl gefühlt. Innerhalb
+                                                kürzester Zeit hat Wencke K. mir zu einem neuem Job verholfen. Der
+                                                Kontakt war sehr Professionell, Sie ist immer Ansprechbar und hat einem
+                                                immer weiter geholfen...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="googlereview popup__btn" data-popup="rewiewpopup">
+                                        <div class="googlereview__header">
+                                            <div class="googlereview__ava" style="background: #499BF8;">
+                                                F
+                                            </div>
+                                            <div class="googlereview__person">
+                                                <p class="name">Rudolf Schneider</p>
+                                                <p class="date">2 weeks ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="googlereview__descr">
+                                            <div class="stars">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                            </div>
+                                            <span>
+                                                Nieck Noor Naward hat mir sehr gute Angebote gegeben und mich für jedes
+                                                Gespräch gut vorbereitet. Dank ihm habe ich die Stelle die ich wollte
+                                                auch bekommen. Jederzeit wieder würde ich mich an Ihm wenden.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="googlereview popup__btn" data-popup="rewiewpopup">
+                                        <div class="googlereview__header">
+                                            <div class="googlereview__ava" style="background: #F69E5E;">
+                                                R
+                                            </div>
+                                            <div class="googlereview__person">
+                                                <p class="name">Rainer Haack</p>
+                                                <p class="date">2 month ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="googlereview__descr">
+                                            <div class="stars">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                                <img src="img/star.png" alt="star">
+                                            </div>
+                                            <span>
+                                                Ich habe gerade einen
+                                                neuen Job durch Kevin Gotthardt bekommen. Der Einsatz und auch die
+                                                Kommunikation waren bestens. Ich bin sehr zufrieden mit der Erfahrung.
+                                                Gerne empfehle ich ihn weiter.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="bluebtn">Leave your feedback with <img src="img/google-icon.svg"
+                                        alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="geeignetemitarbeiter">
+                <div class="geeignetemitarbeiter__left">
+                    <div class="imgwrap">
+                        <img src="img/mainpic2.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="geeignetemitarbeiter__right cpr">
+                    <div class="textwrap">
+                        <h3 class="secttitle">Geeignete Mitarbeiter</h3>
+                        <p class="subtitlesect">Sie suchen – wir finden!</p>
+                        <div class="descr">
+                            <p>
+                                Durch unser breites Netzwerk und unterschiedlichste Akquisekanäle stehen wir dauerhaft
+                                mit hochqualifizierten Fachkräften in Kontakt. Unsere erprobten Prozesse im
+                                Kandidatenkontakt gewährleisten eine hohe Qualität an Bewerberprofilen.
+                            </p>
+                        </div>
+                        <a href="#" class="bluebtn">Jetzt Mitarbeiter finden</a>
+                    </div>
+                </div>
+                <div class="bottinfo">
+                    <div class="bottinfo__left cpl">
+                        <div class="bottinfo__box">
+                            <p class="count">30.000 +</p>
+                            <p class="descr">Qualifizierte Kandidaten</p>
+                        </div>
+                        <div class="bottinfo__box">
+                            <p class="count">3000+</p>
+                            <p class="descr">Placements</p>
+                        </div>
+                    </div>
+                    <div class="bottinfo__right cpr">
+                        <div class="bottinfo__box">
+                            <p class="count">1 Mio +</p>
+                            <p class="descr">Kontaktaufnahmen zu<br> Kandidaten</p>
+                        </div>
+                        <div class="bottinfo__box">
+                            <p class="count">60+</p>
+                            <p class="descr">Kontaktaufnahmen zu Kandidaten</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="werde__teams">
+                <div class="container">
+                    <h3 class="secttitle">Werde Teil des Teams!</h3>
+                    <p class="subtitlesect">
+                        „Wähle einen Job, den Du liebst, und Du wirst nie wieder arbeiten müssen“ Konfuzius
+                    </p>
+                    <div class="descr">
+                        Ein Job im Herzen Hamburgs, ein großartiges Team, tolle Karrierechancen und ein einzigartiger
+                        Spirit warten!
+                    </div>
+
+                    <div class="werdeslider__arrws">
+                        <div class="swiper-button-prev msl3"></div>
+                        <div class="swiper-button-next msl3"></div>
+                    </div>
+
+                    <div class="werdesliderwrap">
+                        <div class="swiper werdeslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="futjobplace__slide">
+                                        <div class="futjobplace__slideimg">
+                                            <img src="img/jobplace1.jpg" alt="img">
+                                        </div>
+                                        <div class="futjobplace__slidedescr">
+                                            <p class="title">Firmenevents</p>
+                                            <p class="descr">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="futjobplace__slide">
+                                        <div class="futjobplace__slideimg">
+                                            <img src="img/jobplace2.jpg" alt="img">
+                                        </div>
+                                        <div class="futjobplace__slidedescr">
+                                            <p class="title">Dachterrasse</p>
+                                            <p class="descr">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="futjobplace__slide">
+                                        <div class="futjobplace__slideimg">
+                                            <img src="img/jobplace3.jpg" alt="img">
+                                        </div>
+                                        <div class="futjobplace__slidedescr">
+                                            <p class="title">Coaching</p>
+                                            <p class="descr">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="futjobplace__slide">
+                                        <div class="futjobplace__slideimg">
+                                            <img src="img/jobplace4.jpg" alt="img">
+                                        </div>
+                                        <div class="futjobplace__slidedescr">
+                                            <p class="title">Kicker</p>
+                                            <p class="descr">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="futjobplace__slide">
+                                        <div class="futjobplace__slideimg">
+                                            <img src="img/jobplace2.jpg" alt="img">
+                                        </div>
+                                        <div class="futjobplace__slidedescr">
+                                            <p class="title">Modernes Büro</p>
+                                            <p class="descr">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <a href="#" class="bluebtn">Überzeuge Dich von ADVERGY</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="veranstaltungen">
+                <div class="container">
+                    <h3 class="secttitle">Unsere<br> Veranstaltungen</h3>
+                    <p class="subtitlesect">
+                        Voneinander lernen – miteinander wachsen!
+                    </p>
+                    <div class="descr">
+                        Informative Veranstaltungen mit herausragenden Impulsvorträgen und einem konstruktiven und
+                        ausgelassenen Zusammenkommen sind großer Teil unserer Philosophie.
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="imgwrap smallimg"><img src="img/verans1.jpg" alt="img"></div>
+                            <div class="imgwrap smallimg"><img src="img/verans2.jpg" alt="img"></div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="imgwrap bigimg"><img src="img/verans3.jpg" alt="img"></div>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <a href="#" class="bluebtn">Anmeldung für das nächste Event</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="socmedia">
+                <div class="socmedia__left">
+                    <div class="imgwrap">
+                        <img src="img/socimg.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="socmedia__right cpr">
+                    <div class="textwrap">
+                        <h3 class="secttitle">Folgen Sie uns auf Social Media</h3>
+                        <p class="subtitlesect">
+                            Einzigartige Stimmung - Echte Eindrücke
+                        </p>
+                        <div class="descr">
+                            <p>
+                                Alle Informationen für Kunden, Kandidaten und interne Bewerber finden Sie unter den
+                                folgenden Icons. Wir freuen uns mit Ihnen auf den verschiedenen Plattformen in Kontakt
+                                zu treten.
+                            </p>
+                        </div>
+
+                    </div>
+                    <ul class="socmedia__list">
+                        <li><a href="#"><img src="img/soc1.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc2.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc3.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc4.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc5.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc6.svg" alt="logo"></a></li>
+                        <li><a href="#"><img src="img/soc7.svg" alt="logo"></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="maincontsect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="maincontsect__descr">
+                                <h3 class="secttitle">Schreiben Sie uns</h3>
+                                <ul>
+                                    <li>oder kontaktieren Sie uns</li>
+                                    <li>E-mail: <a href="mailto:info@advergy.de">info@advergy.de</a></li>
+                                    <li><a href="tel:+4904060944000">+49 (0) 40 609 44 00 – 0</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="maincontsect__form">
+                                <form action="#">
+                                    <input type="text" placeholder="Name*">
+                                    <input type="email" placeholder="Email*">
+                                    <textarea placeholder="Message*"></textarea>
+                                    <div class="textinfo">
+                                        <p>
+                                            Mit dem Abschicken des Kontaktformulars, erklären Sie sich damit
+                                            einverstanden, dass Ihre Daten zur Bearbeitung Ihres Anliegens verwendet
+                                            werden. Weitere Informationen und Widerrufshinweise finden Sie in unserer
+                                            <a href="#">Datenschutzerklärung</a>.
+                                        </p>
+                                    </div>
+                                    <input type="submit" class="bluebtn" value="Absenden">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo-footer.svg" alt="img"></a>
+                    <p>
+                        Seit Gründung 2010 versteht sich die ADVERGY GmbH als starker Partner für Kunden und
+                        Kandidaten und widmet sich jeder Vakanz mit voller Aufmerksamkeit.
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Für Unternehmen</a>
+                                <ul>
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li><a href="#">Tipps für Contracting</a></li>
+                                    <li><a href="#">Tipps für Festanstellung</a></li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Für Festangestellte</a>
+                                <ul>
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">FÜR FREELANCER</a>
+                            </li>
+                            <li>
+                                <a href="#">Starte durch bei ADVERGY</a>
+                            </li>
+                            <li>
+                                <a href="#">KONTAKT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    2010. – 2022. © ADVERGY. Alle Rechte vorbehalten.
+                </p>
+                <ul>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup__window hide rewiewpopup">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <div class="googlereview">
+                        <div class="googlereview__header">
+                            <div class="googlereview__ava" style="background: #3BD79F;">
+                                M
+                            </div>
+                            <div class="googlereview__person">
+                                <p class="name">M O</p>
+                                <p class="date">7 months ago</p>
+                            </div>
+                        </div>
+                        <div class="googlereview__descr">
+                            <div class="stars">
+                                <img src="img/star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
+                            <span>
+                                Vom ersten Kontakt an, hat man sich hier sehr wohl gefühlt. Innerhalb kürzester Zeit hat
+                                Wencke K. mir zu einem neuem Job verholfen. Der Kontakt war sehr Professionell, Sie ist
+                                immer Ansprechbar und hat einem immer weiter geholfen. Innerhalb weniger Tage gab es
+                                gleich mehrere Bewerbungsgespräche mit potentiell passenden Firmen. Hier ist man in sehr
+                                guten Händen, kann ich nur weiter Empfehlen Daumen hoch.
+                            </span>
+                            <a href="#">See more reviews on Gooogle <img src="img/arrow-forward.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>
