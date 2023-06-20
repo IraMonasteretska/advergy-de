@@ -347,6 +347,22 @@ $(document).ready(function () {
                 nextEl: ".swiper-button-next.msl2",
                 prevEl: ".swiper-button-prev.msl2",
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                },
+                575: {
+                    slidesPerView: 1.5,
+                },
+
+                768: {
+                    slidesPerView: 1.5,
+                },
+
+                992: {
+                    slidesPerView: 3,
+                },
+            },
         });
     }
 
@@ -381,6 +397,36 @@ $(document).ready(function () {
             },
         });
     }
+
+
+    if ($('*').is('.ratingsection__slider')) {
+        var swiper = new Swiper(".ratingsection__slider", {
+            slidesPerView: "auto",
+            spaceBetween: 40,
+            speed: 700,
+
+            breakpoints: {
+                320: {
+                    spaceBetween: 12,
+                },
+
+                575: {
+                    spaceBetween: 40,
+                }
+            },
+        });
+    }
+
+
+
+    
+
+
+
+
+
+
+
 
 
 

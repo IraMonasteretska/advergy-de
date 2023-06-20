@@ -289,7 +289,7 @@
             margin-bottom: 40px;
         }
 
-        .col-xl-6 {
+        .col-lg-6 {
             margin-bottom: 48px;
         }
     }
@@ -447,7 +447,9 @@
         color: rgba(255, 255, 255, 0.8);
         max-width: 365px;
     }
+}
 
+.referenzensect {
     .slarrws {
         position: relative;
         text-align: right;
@@ -722,7 +724,6 @@
     .geeignetemitarbeiter__right {
         flex: 0 0 auto;
         width: 50%;
-        position: relative;
     }
 
     .imgwrap {
@@ -767,10 +768,6 @@
 
 
     }
-
-
-
-
 
 }
 
@@ -1076,17 +1073,42 @@
     }
 
     .maincontsect__form {
+        .inputfield {
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+
+            .errormess {
+                display: none;
+            }
+
+            &.error {
+                input:not(.bluebtn) {
+                    border: 1px solid #FF7878;
+                    color: #E45959;
+                    display: block;
+                }
+
+                .errormess {
+                    display: block;
+                    margin: 4px 0 0 0;
+                    color: #E45959;
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+            }
+        }
+
         input:not(.bluebtn) {
             width: 100%;
             height: 46px;
             background: #F4F5F8;
             border: 1px solid #DBDBDB;
             border-radius: 1px;
-            margin-bottom: 24px;
             padding-left: 17px;
-            font-family: "Poppins",sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 16px;
             color: #858585;
+            transition: 0.3s;
 
             &::placeholder {
                 color: #858585;
@@ -1094,6 +1116,7 @@
 
             &:focus {
                 color: #2A2A2A;
+                border: 1px solid #A5A6AD;
 
                 &::placeholder {
                     color: #2A2A2A;
@@ -1109,17 +1132,19 @@
             height: 137px;
             resize: none;
             padding: 10px 17px;
-            font-family: "Poppins",sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 16px;
             color: #858585;
-            margin-bottom: 24px;
             outline: none;
+            transition: 0.3s;
+
             &::placeholder {
                 color: #858585;
             }
 
             &:focus {
                 color: #2A2A2A;
+                border: 1px solid #A5A6AD;
 
                 &::placeholder {
                     color: #2A2A2A;
@@ -1129,7 +1154,7 @@
 
         .textinfo {
             margin-bottom: 32px;
-            
+
             p {
                 color: #858585;
                 text-align: justify;
@@ -1138,10 +1163,882 @@
                     margin-bottom: 0;
                 }
             }
+
+            a {
+                color: #15437C;
+            }
         }
 
         .bluebtn {
             width: 150px;
         }
+    }
+}
+
+.mainwelcscreen {
+    min-height: 500px;
+}
+
+.profregr .imgwrap img {
+    max-width: 100%;
+}
+
+.futjobplace__slideimg {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.googlereviews {
+    overflow: hidden;
+}
+
+.ratingsection {
+    overflow: hidden;
+
+    .swiper {
+        overflow: visible;
+    }
+
+    .wasmitarbeiter__box {
+        display: inline-block;
+    }
+
+    .swiper-slide {
+        width: auto;
+
+        .wasmitarbeiter__box {
+            width: 228px;
+        }
+
+        &:nth-child(2) {
+            .wasmitarbeiter__box {
+                width: 273px;
+            }
+        }
+
+        &:nth-child(3) {
+            .wasmitarbeiter__box {
+                width: 320px;
+            }
+        }
+
+        &:nth-child(4) {
+            .wasmitarbeiter__box {
+                width: 259px;
+            }
+        }
+    }
+}
+
+.socmedia__list.socmedia__list-tablet,
+.slarrws.mob {
+    display: none;
+}
+
+.werde__teams {
+    overflow: hidden;
+
+    .swiper {
+        overflow: visible;
+    }
+}
+
+@media(max-width:1300.8px) {
+
+    .socmedia .socmedia__right .descr {
+        margin-bottom: 20px;
+    }
+
+    .socmedia .socmedia__left {
+        .imgwrap {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .mainwelcscreen h1 {
+        font-size: 46px;
+        line-height: 58px;
+        margin-bottom: 20px;
+    }
+
+    .mainwelcscreen p {
+        font-size: 18px;
+        line-height: 160%;
+        margin-bottom: 30px;
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr {
+        min-height: 600px;
+    }
+
+    .expertize__box:nth-child(2) .expertize__descrblock {
+        padding-left: 60px;
+    }
+
+    .expertize__box:nth-child(1) .expertize__descrblock {
+        padding-right: 20px;
+    }
+
+    .referenzensect__slide .sltextwrap .descr {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .referenzensect__slide .sltextwrap {
+        padding: 30px 60px 0 60px;
+    }
+
+    .referenzensect__slide .sltextwrap .descr:after {
+        left: -60px;
+    }
+
+    .referenzensect__slide .sltextwrap .descr:before {
+        right: -60px;
+    }
+
+    .geeignetemitarbeiter .imgwrap {
+        height: 800px;
+    }
+
+    .bottinfo .bottinfo__right {
+        padding-left: 40px;
+    }
+
+    .bottinfo .bottinfo__left {
+        padding-right: 40px;
+    }
+
+    .bottinfo .bottinfo__left,
+    .bottinfo .bottinfo__right {
+        height: 200px;
+        padding-top: 30px;
+    }
+
+    .geeignetemitarbeiter .textwrap {
+        padding: 100px 0 0 100px;
+    }
+
+    .socmedia .socmedia__left,
+    .socmedia .socmedia__right {
+        width: 50%;
+    }
+
+    .socmedia .socmedia__right {
+        padding-left: 50px;
+    }
+
+
+
+
+    .expertize .expertize__vac p,
+    .expertize .expertize__vac a {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .profregr {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .mainwelcscreen {
+        min-height: initial;
+        height: 475px;
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr {
+        min-height: 460px;
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr .secttitle {
+        margin-bottom: 16px;
+        font-size: 38px;
+        line-height: 57px;
+    }
+
+    .rersperf {
+        .subtitlesect:after {
+            width: 66px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .subtitlesect {
+            padding-left: 78px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr {
+        width: 48%;
+    }
+
+    .rersperf__botsect .col-md-6 {
+        margin-bottom: 44px;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+    }
+
+    .profregr .imgwrap img {
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .profregr .secttitle {
+        margin-bottom: 16px;
+    }
+
+    .profregr .descr {
+        max-width: 580px;
+    }
+
+    .profregr {
+        padding-bottom: 40px;
+    }
+
+    .expertize {
+        flex-wrap: wrap;
+
+        .expertize__box {
+            width: 100%;
+        }
+    }
+
+    .expertize .expertize__vac p {
+        min-height: initial;
+    }
+
+    .expertize .expertize__descrblock {
+        padding-bottom: 40px;
+    }
+
+    .referenzensect__left .slarrws {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .referenzensect .textwrap {
+        margin-bottom: 45px;
+    }
+
+    .referenzensect__left .slarrws {
+        margin-bottom: 40px;
+    }
+
+    .referenzensect__left .secttitle {
+        margin-bottom: 12px;
+    }
+
+    .referenzensect__left .subtitlesect {
+        margin-bottom: 12px;
+    }
+
+    .referenzensect {
+        padding: 35px 0 60px;
+    }
+
+    .dotswavebg {
+        display: none;
+    }
+
+    .referenzensect__slide .sltextwrap {
+        padding-top: 0;
+    }
+
+    .referenzensect__slide .sltextwrap .title {
+        margin-bottom: 18px;
+    }
+
+    .referenzensect__slide .sltextwrap .descr {
+        min-height: 150px;
+    }
+
+    .geeignetemitarbeiter .geeignetemitarbeiter__left,
+    .geeignetemitarbeiter .geeignetemitarbeiter__right {
+        width: 100%;
+    }
+
+    .geeignetemitarbeiter__left {
+        position: relative;
+    }
+
+    .bottinfo {
+        flex-wrap: wrap;
+
+        .bottinfo__left,
+        .bottinfo__right {
+            width: 100%;
+            height: auto;
+        }
+
+        .bottinfo__left,
+        .bottinfo__right {
+            padding: 24px 40px !important;
+            justify-content: flex-start;
+            width: 100%;
+
+            .bottinfo__box {
+                width: 50%;
+                max-width: initial;
+            }
+        }
+    }
+
+    .bottinfo .bottinfo__left .bottinfo__box .count,
+    .bottinfo .bottinfo__right .bottinfo__box .count {
+        margin-bottom: 4px;
+    }
+
+    .bottinfo__box .descr {
+        font-size: 16px;
+    }
+
+    .bottinfo__box .descr {
+        max-width: 200px;
+    }
+
+    .geeignetemitarbeiter .textwrap {
+        padding: 24px 0 40px;
+    }
+
+    .expertize__descrblock {
+        padding: 20px 15px 40px !important;
+        max-width: 720px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    .geeignetemitarbeiter .geeignetemitarbeiter__right {
+        padding-right: 0 !important;
+
+        .textwrap {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0 auto;
+            max-width: 720px;
+            width: 100%;
+        }
+    }
+
+    .geeignetemitarbeiter .textwrap .descr {
+        max-width: 490px;
+    }
+
+    .werde__teams {
+        .secttitle {
+            max-width: 408px;
+            margin-bottom: 12px;
+        }
+
+        .subtitlesect {
+            margin-bottom: 12px;
+        }
+    }
+
+    .werde__teams .werdeslider {
+        padding-bottom: 10px;
+    }
+
+    .veranstaltungen {
+        .col-lg-4 {
+            display: flex;
+            justify-content: space-between;
+
+            .imgwrap {
+                width: calc(50% - 10px);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .veranstaltungen .bigimg {
+        height: 443px;
+    }
+
+    .socmedia .socmedia__right {
+        padding-left: 20px;
+    }
+
+    .socmedia .socmedia__right {
+        .secttitle {
+            margin-bottom: 12px;
+        }
+
+        .subtitlesect {
+            padding-left: 78px;
+
+            &:after {
+                width: 66px;
+            }
+        }
+    }
+
+    .veranstaltungen .secttitle,
+    .veranstaltungen .subtitlesect {
+        margin-bottom: 12px;
+    }
+
+    .veranstaltungen .descr {
+        max-width: 408px;
+    }
+
+    .socmedia .socmedia__right .subtitlesect {
+        margin-bottom: 12px;
+    }
+
+    .socmedia .socmedia__list {
+        display: none;
+    }
+
+    .socmedia .socmedia__left {
+        min-height: 362px;
+    }
+
+    .socmedia .socmedia__right .descr {
+        margin-bottom: 0;
+    }
+
+    .socmedia__list.socmedia__list-tablet {
+        display: flex;
+        max-width: 720px;
+        width: 100%;
+        margin: 28px auto 0;
+    }
+
+    .socmedia {
+        padding-bottom: 40px;
+    }
+
+    .maincontsect {
+        padding: 40px 0 40px;
+    }
+
+    .maincontsect .secttitle {
+        margin-bottom: 12px;
+    }
+
+    .maincontsect .maincontsect__descr ul {
+        margin-bottom: 40px;
+    }
+
+    .maincontsect__form {
+        max-width: 492px;
+    }
+
+
+
+
+
+
+
+    .socmedia .subtitlesect,
+    .profregr .subtitlesect,
+    .expertize .expertize__descrblock .subtitlesect,
+    .referenzensect__left .subtitlesect,
+    .geeignetemitarbeiter .textwrap .subtitlesect,
+    .werde__teams .subtitlesect,
+    .veranstaltungen .subtitlesect {
+        font-size: 16px;
+        padding-left: 78px;
+
+        &::after {
+            width: 66px;
+        }
+    }
+
+    .rersperfbox .descr,
+    .profregr .descr,
+    .expertize .expertize__descrblock .descr,
+    .referenzensect__slide .sltextwrap .descr {
+        font-size: 14px;
+    }
+
+    .werde__teams {
+        padding: 40px 0;
+    }
+
+    .googlereviews .googlereviews__head .googlereviews__arrws {
+        display: none;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .profregr .imgwrap img {
+        max-width: 100%;
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr {
+        width: 100%;
+    }
+
+    .werde__teams {
+        overflow: hidden;
+    }
+
+    .werdesliderwrap .swiper {
+        overflow: visible;
+    }
+
+    .expertize__descrblock,
+    .geeignetemitarbeiter .geeignetemitarbeiter__right .textwrap,
+    .socmedia__list.socmedia__list-tablet {
+        max-width: 540px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .mainwelcscreen {
+        height: 100vh;
+        min-height: 475px;
+    }
+
+    .mainwelcscreen h1 {
+        font-size: 35px;
+        line-height: 52px;
+        margin-bottom: 0;
+    }
+
+    .mainwelcscreen p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .rersperf__topsectdescr {
+        padding: 180px 20px !important;
+    }
+
+    .rersperf__botsect {
+        padding: 80px 0 20px;
+    }
+
+    .rersperfbox a {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .rersperfbox a img {
+        margin-top: -2px;
+    }
+
+    .rersperf__botsect .col-md-6,
+    .rersperf__botsect .col-md-6:nth-child(3) {
+        margin-bottom: 40px;
+    }
+
+    .profregr {
+        padding: 60px 0;
+    }
+
+    .expertize .expertize__box .imgwrap {
+        height: 200px;
+    }
+
+    .expertize__descrblock {
+        padding: 20px 20px 40px !important;
+    }
+
+    .expertize .expertize__descrblock .descr {
+        margin-bottom: 32px;
+    }
+
+    .expertize .expertize__vac a {
+        font-size: 14px;
+
+        img {
+            width: 20px;
+            margin-top: -2px;
+        }
+    }
+
+    .expertize .expertize__descrblock .col-lg-6 {
+        margin-bottom: 32px;
+    }
+
+    .expertize__box {
+        padding-top: 60px;
+    }
+
+    .referenzensect {
+        padding: 80px 0 20px;
+    }
+
+    .referenzensect__left .secttitle {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .referenzensect .textwrap {
+        margin-bottom: 24px;
+    }
+
+    .slarrws.mob {
+        display: block;
+    }
+
+    .referenzensect__left .slarrws {
+        display: none;
+    }
+
+    .referenzensect__slide {
+        padding: 24px 20px 92px 20px;
+
+        .sltextwrap {
+            padding: 0;
+
+            .title {
+                max-width: 190px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .referenzensect__slide .sltextwrap .descr:before {
+        right: 0;
+        top: -70px;
+    }
+
+    .referenzensect__slide .sltextwrap .descr {
+        min-height: initial;
+    }
+
+    .referenzensect__slide .sltextwrap .descr:after {
+        left: 0;
+        bottom: -70px;
+        top: initial;
+    }
+
+    .slarrws.mob {
+        padding-right: 0;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .referenzensect .slarrws .swiper-button-next,
+    .referenzensect .slarrws .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .referenzensect .slarrws .swiper-button-prev {
+        margin-right: 40px;
+    }
+
+    .googlereviews .googlereviews__head .googlereviews__title {
+        width: calc(100% - 140px);
+        padding-right: 15px;
+    }
+
+    .googlereviews .googlereviews__head .googlereviews__arrws {
+        display: flex;
+        width: 140px;
+    }
+
+    .googlereviews .googlereviews__head .googlereviews__arrws .swiper-button-next,
+    .googlereviews .googlereviews__head .googlereviews__arrws .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .googlereviews .googlereviews__head {
+        align-items: center;
+    }
+
+    .googlereviews {
+        padding: 80px 0 20px;
+    }
+
+    .geeignetemitarbeiter .imgwrap {
+        height: 500px;
+        object-position: 0 50%;
+    }
+
+    .bottinfo .bottinfo__left .bottinfo__box .count,
+    .bottinfo .bottinfo__right .bottinfo__box .count {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .bottinfo__box .descr {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .bottinfo .bottinfo__left,
+    .bottinfo .bottinfo__right {
+        padding: 20px !important;
+    }
+
+    .bottinfo .bottinfo__left .bottinfo__box .descr,
+    .bottinfo .bottinfo__right .bottinfo__box .descr {
+        max-width: 140px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .geeignetemitarbeiter .imgwrap img {
+        height: calc(100% - 130px);
+    }
+
+    .geeignetemitarbeiter .textwrap {
+        padding: 28px 0 20px;
+    }
+
+    .werde__teams .werdeslider__arrws .swiper-button-next,
+    .werde__teams .werdeslider__arrws .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .werde__teams .werdeslider__arrws {
+        max-width: 140px;
+    }
+
+    .werde__teams .werdeslider {
+        padding-bottom: 0;
+    }
+
+    .werde__teams .text-right,
+    .veranstaltungen .text-right {
+        text-align: center;
+    }
+
+    .veranstaltungen .col-lg-4 {
+        flex-wrap: wrap;
+
+        .imgwrap {
+            width: 100%;
+        }
+    }
+
+    .veranstaltungen .smallimg,
+    .veranstaltungen .smallimg:last-child {
+        margin-bottom: 20px;
+    }
+
+    .veranstaltungen .smallimg,
+    .veranstaltungen .bigimg {
+        height: 240px;
+    }
+
+    .veranstaltungen {
+        padding: 80px 0;
+    }
+
+    .socmedia .socmedia__left,
+    .socmedia .socmedia__right {
+        width: 100%;
+    }
+
+    .socmedia .socmedia__left .imgwrap {
+        height: auto;
+    }
+
+    .socmedia .socmedia__right {
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+    .slarrws.mob,
+    .socmedia__list.socmedia__list-tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-wrap: wrap;
+
+        li {
+            margin: 0 20px 20px;
+        }
+    }
+
+    .socmedia {
+        padding-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .werde__teams,
+    .maincontsect {
+        padding: 80px 0 20px;
+    }
+
+    .rersperfbox .title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .rersperf .rersperf__topsect>img {
+        object-position: 0 0;
+    }
+
+    .rersperf .subtitlesect,
+    .expertize .expertize__descrblock .subtitlesect,
+    .geeignetemitarbeiter .textwrap .subtitlesect,
+    .profregr .subtitlesect,
+    .referenzensect__left .subtitlesect,
+    .socmedia .subtitlesect,
+    .veranstaltungen .subtitlesect,
+    .werde__teams .subtitlesect {
+        font-size: 18px;
+        padding-left: 64px;
+
+        &::after {
+            width: 52px;
+        }
+    }
+
+    .rersperf .rersperf__topsect .rersperf__topsectdescr .secttitle,
+    .rersperf .rersperf__topsect .rersperf__topsectdescr .subtitlesect,
+    .profregr .secttitle,
+    .profregr .subtitlesect,
+    .geeignetemitarbeiter .textwrap .secttitle,
+    .geeignetemitarbeiter .textwrap .subtitlesect {
+
+        margin-bottom: 12px;
+    }
+
+    .ratingsection {
+        padding: 22px 0;
     }
 }
