@@ -316,7 +316,7 @@
 
 
 
-    
+
 
 }
 
@@ -339,7 +339,8 @@
         font-size: 14px;
     }
 
-    .tipsslarrows .swiper-button-next, .tipsslarrows .swiper-button-prev{
+    .tipsslarrows .swiper-button-next,
+    .tipsslarrows .swiper-button-prev {
         width: 50px;
         height: 50px;
         top: -40px;
@@ -350,3 +351,101 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.js-result__item-bottom a+a {
+    img {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.update-btn a {
+    transition: 0.3s;
+
+    &:hover {
+        border: 1.5px solid #5189CF;
+    }
+}
+
+.ap-form .inputblock .inputfield input,
+.ap-form .inputblock .inputfield textarea {
+    transition: 0.3s;
+
+    &:focus {
+        border: 1px solid #8FA1BD;
+    }
+}
+
+.select2-container--open {
+    .select2-selection.select2-selection--single {
+        border: 1px solid #8FA1BD;
+    }
+}
+
+.dp-information__buttons .whitebtn {
+    &:hover {
+        color: #fff;
+        background: rgb(28, 75, 133);
+        border-color: rgb(28, 75, 133);
+    }
+}
+
+.dp-slider__item-bottom a {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.dp-slider__item-bottom a+a {
+    img {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+}
+
+
+
+
+@media(max-width:767.8px) {
+    .dp-question__inner h3 {
+        width: 100%;
+    }
+
+    .dp-question__inner p {
+        text-align: left;
+    }
+
+    .dp-question__inner a {
+        margin: 0;
+        width: 200px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .inputfield.confirmation label {
+        align-items: flex-start;
+    }
+
+}

@@ -531,9 +531,11 @@ $(document).ready(function () {
     if ($('*').is('.dp-slider__swiper')) {
         var swiper = new Swiper(".dp-slider__swiper", {
             slidesPerView: 1,
+            mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
+                clickable: true,
             },
             breakpoints: {
                 320: {
