@@ -73,7 +73,9 @@
         margin-top: 40px;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
         width: 100%;
         border: 1.5px solid #FFFFFF;
         border-radius: 2px;
@@ -390,7 +392,9 @@
         margin-top: 12px;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
         width: 100%;
         padding: 9px 12px;
         font-size: 16px;
