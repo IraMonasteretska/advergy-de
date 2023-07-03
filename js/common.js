@@ -42,6 +42,11 @@ $(document).ready(function () {
         $(this).toggleClass('rotate');
     });
 
+    $('.linkarr').click(function () {
+        $(this).siblings('.subsubmenu').slideToggle();
+        $(this).toggleClass('rotate');
+    });
+
     $('.burger ').click(function () {
         $('.header__nav').toggleClass('show');
     });
@@ -609,11 +614,11 @@ $(document).ready(function () {
 
 
     // confirmation form checkbox
-    $('.customcheck').change(function () {
+    $('.confirmation .customcheck').change(function () {
         if ($(this).is(':checked')) {
-            $('.formbtn').prop('disabled', false);
+            $(this).closest('.inputblock').find('.formbtn').prop('disabled', false);
         } else {
-            $('.formbtn').prop('disabled', true);
+            $(this).closest('.inputblock').find('.formbtn').prop('disabled', true);
         }
     });
 
@@ -631,6 +636,24 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+
+    // accordion business areas
+    $('.open-accordion').on('click', function() {
+        $(this).closest('.ac-body').toggleClass('active');
+        $(this).closest('.ac-body').children('.ac-content').slideToggle();
+    })
+
+
+
+    // contact tabs
+    $('.contact__tab').on('click', function () {
+        var dataClass = $(this).attr('data-tab');
+        $('.contact__box').removeClass('active-box').hide();
+        $('.contact__tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('active-box').fadeIn(500);
+        return false;
+    });
 
 
 

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiativbewerbung</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="sublink">
+                                <a href="#">Für Unternehmen</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li class="subsublink">
+                                        <a href="#">
+                                            Unterlagen gestalten
+                                        </a>
+                                        <span class="linkarr"></span>
+                                        <ul class="subsubmenu">
+                                            <li><a href="#">Tipps für Contracting</a></li>
+                                            <li><a href="#">Tipps für Festanstellung</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Für Festangestellte</a>
+                                <span class="linkarr"></span>
+                                <ul class="submenu">
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Für Freelancer</a></li>
+                            <li><a href="#">Starte durch bei ADVERGY</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__partner">
+                    <img src="img/header-partner.svg" alt="partner">
+                </div>
+
+                <button class="burger burger2"><span></span></button>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="ap-heroscreen contact-screen">
+                <img src="img/new/contact__bg.jpg" alt="img">
+                <div class="ap-heroscreen__info cpl">
+                    <div class="ap-heroscreen__infowrap">
+                        <h1>
+                            Kontakt
+                        </h1>
+                        <span class="linetext">
+                            Jede Anfrage is willkommen.
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        </p>
+                    </div>
+                </div>
+                <div class="contact__filter">
+                    <h3>
+                        Dein Anliegen ist ..
+                    </h3>
+                    <div class="container">
+                        <div class="contact__filter-tabs">
+                            <div class="contact__tab active" data-tab="tab1">
+                                Ich suche neue Jobperspektiven
+                            </div>
+                            <div class="contact__tab" data-tab="tab2">
+                                Wir suchen Experten
+                            </div>
+                            <div class="contact__tab" data-tab="tab3">
+                                Ich möchte ins Advergy Team
+                            </div>
+                            <div class="contact__tab" data-tab="tab4">
+                                Quick Contact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ap-form">
+                <div class="container">
+
+                    <div class="contact__box tab1 active-box">
+                        <div class="contact__box-title">
+                            <h2>
+                                “Ein Traumjob? Nein wir finden Deinen Traumjob”
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <form>
+                                    <h3>
+                                        <span>
+                                            1
+                                        </span>
+                                        Wer bist Du? Erzähl uns ein bisschen über Dich.
+                                    </h3>
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Anrede*
+                                            </p>
+                                            <select class="customselect">
+                                                <option value="Herr">Herr</option>
+                                                <option value="Frau">Frau</option>
+                                                <option value="Divers">Divers</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Vorname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Nachname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Mein aktueller Jobtitel*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield error">
+                                            <p>
+                                                E-Mail*
+                                            </p>
+                                            <input type="email">
+                                        </div>
+                                        <div class="inputfield phone">
+                                            <p>
+                                                Telefonnummer*
+                                            </p>
+                                            <select class="customselect selectcountry">
+                                                <option value="+38" data-image="img/new/country/ukraine.png">+38
+                                                </option>
+                                                <option value="+49" data-image="img/new/country/germany.png">+49
+                                                </option>
+                                                <option value="+44" data-image="img/new/country/united-kingdom.png">+44
+                                                </option>
+                                            </select>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Erreichbarkeit
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield textarea">
+                                            <p>
+                                                Mein Anliegen*
+                                            </p>
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            2
+                                        </span>
+                                        Deine Dokumente
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <p>
+                                            Lade hier Deinen Lebenslauf, Referenzen und Zertifikate hoch (Formate: .doc,
+                                            .pdf,
+                                            .pptx, .jpg). Wir brauchen kein Anschreiben von Dir.
+                                        </p>
+                                        <div class="inputfield upload-popup">
+                                            <p>
+                                                Lebenslauf*
+                                            </p>
+                                            <input type="text" readonly class="fp1">
+                                            <img class="upload-btn popup__btn" data-popup="fp1"
+                                                src="img/new/Plus_blue.svg" alt="upload">
+                                            <img class="delete-btn del1" src="img/new/delete_icon.svg" alt="delete">
+                                        </div>
+                                        <div class="inputfield upload-popup">
+                                            <p>
+                                                Referenzen
+                                            </p>
+                                            <input type="text" readonly class="fp2">
+                                            <img class="upload-btn popup__btn" data-popup="fp2"
+                                                src="img/new/Plus_blue.svg" alt="upload">
+                                            <img class="delete-btn del2" src="img/new/delete_icon.svg" alt="delete">
+                                        </div>
+                                        <div class="inputfield upload-popup">
+                                            <p>
+                                                Zertifikate
+                                            </p>
+                                            <input type="text" readonly class="fp3">
+                                            <img class="upload-btn popup__btn" data-popup="fp3"
+                                                src="img/new/Plus_blue.svg" alt="upload">
+                                            <img class="delete-btn del3" src="img/new/delete_icon.svg" alt="delete">
+                                        </div>
+                                        <div class="inputfield upload-popup">
+                                            <p>
+                                                Weitere Anhänge
+                                            </p>
+                                            <input type="text" readonly class="fp4">
+                                            <img class="upload-btn popup__btn" data-popup="fp4"
+                                                src="img/new/Plus_blue.svg" alt="upload">
+                                            <img class="delete-btn del4" src="img/new/delete_icon.svg" alt="delete">
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            3
+                                        </span>
+                                        Zustimmen und abschicken
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <div class="inputfield confirmation">
+                                            <label>
+                                                <input type="checkbox" class="customcheck">
+                                                <span>
+                                                </span>
+                                                <p>
+                                                    Hiermit nehme ich zur Kenntnis, dass die von mir im
+                                                    Bewerbungsverfahren
+                                                    angegebenen personenbezogenen Daten gemäß <a href="#">den
+                                                        Datenschutzhinweisen</a> verarbeitet werden.
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <button class="bluebtn formbtn popup__btn" disabled data-popup="typ1">
+                                            Abschicken
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__box tab2">
+                        <div class="contact__box-title">
+                            <h2>
+                                Du suchst das richtige Personal? Wir helfen beim Finden.
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <form>
+                                    <h3>
+                                        <span>
+                                            1
+                                        </span>
+                                        Wie können wir Dich erreichen?
+                                    </h3>
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Anrede*
+                                            </p>
+                                            <select class="customselect">
+                                                <option value="Herr">Herr</option>
+                                                <option value="Frau">Frau</option>
+                                                <option value="Divers">Divers</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Vorname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Nachname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield error">
+                                            <p>
+                                                E-Mail*
+                                            </p>
+                                            <input type="email">
+                                        </div>
+                                        <div class="inputfield phone">
+                                            <p>
+                                                Telefonnummer*
+                                            </p>
+                                            <select class="customselect selectcountry">
+                                                <option value="+38" data-image="img/new/country/ukraine.png">+38
+                                                </option>
+                                                <option value="+49" data-image="img/new/country/germany.png">+49
+                                                </option>
+                                                <option value="+44" data-image="img/new/country/united-kingdom.png">+44
+                                                </option>
+                                            </select>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Erreichbarkeit
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield textarea">
+                                            <p>
+                                                Mein Anliegen*
+                                            </p>
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            2
+                                        </span>
+                                        Was suchst Du? Gib uns ein paar Infos.
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Wähle einen Kernbereich*
+                                            </p>
+                                            <select class="customselect">
+                                                <option value="Herr">IT</option>
+                                                <option value="Frau">Construction & Property</option>
+                                                <option value="Divers">Finance</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Gesuchte Position
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            3
+                                        </span>
+                                        Zustimmen und abschicken
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <div class="inputfield confirmation">
+                                            <label>
+                                                <input type="checkbox" class="customcheck">
+                                                <span>
+                                                </span>
+                                                <p>
+                                                    Hiermit nehme ich zur Kenntnis, dass die von mir im
+                                                    Bewerbungsverfahren
+                                                    angegebenen personenbezogenen Daten gemäß <a href="#">den
+                                                        Datenschutzhinweisen</a> verarbeitet werden.
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <button class="bluebtn formbtn popup__btn" disabled data-popup="typ2">
+                                            Abschicken
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__box tab3">
+                        <div class="contact__box-title">
+                            <h2>
+                                Du suchst das richtige Personal? Wir helfen beim Finden.
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <form>
+                                    <h3>
+                                        <span>
+                                            1
+                                        </span>
+                                        Wie können wir Dich erreichen?
+                                    </h3>
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Anrede*
+                                            </p>
+                                            <select class="customselect">
+                                                <option value="Herr">Herr</option>
+                                                <option value="Frau">Frau</option>
+                                                <option value="Divers">Divers</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Vorname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Nachname*
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield error">
+                                            <p>
+                                                E-Mail*
+                                            </p>
+                                            <input type="email">
+                                        </div>
+                                        <div class="inputfield phone">
+                                            <p>
+                                                Telefonnummer*
+                                            </p>
+                                            <select class="customselect selectcountry">
+                                                <option value="+38" data-image="img/new/country/ukraine.png">+38
+                                                </option>
+                                                <option value="+49" data-image="img/new/country/germany.png">+49
+                                                </option>
+                                                <option value="+44" data-image="img/new/country/united-kingdom.png">+44
+                                                </option>
+                                            </select>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Erreichbarkeit
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputfield textarea">
+                                            <p>
+                                                Mein Anliegen*
+                                            </p>
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            2
+                                        </span>
+                                        Wunschbereich
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <div class="inputfield">
+                                            <p>
+                                                Wunschbereich*
+                                            </p>
+                                            <select class="customselect">
+                                                <option value="Account Manager">Account Manager</option>
+                                                <option value="Recruiter">Recruiter</option>
+                                                <option value="Praktikum">Praktikum</option>
+                                                <option value="Sonstiges">Sonstiges</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputfield">
+                                            <p>
+                                                Frühstmögliches Startdatum*
+                                            </p>
+                                            <input type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <h3>
+                                        <span>
+                                            3
+                                        </span>
+                                        Zustimmen und abschicken
+                                    </h3>
+
+                                    <div class="inputblock">
+                                        <div class="inputfield confirmation">
+                                            <label>
+                                                <input type="checkbox" class="customcheck">
+                                                <span>
+                                                </span>
+                                                <p>
+                                                    Hiermit nehme ich zur Kenntnis, dass die von mir im
+                                                    Bewerbungsverfahren
+                                                    angegebenen personenbezogenen Daten gemäß <a href="#">den
+                                                        Datenschutzhinweisen</a> verarbeitet werden.
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <button class="bluebtn formbtn popup__btn" disabled data-popup="typ3">
+                                            Abschicken
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__box tab4">
+                        <div class="contact__box-title">
+                            <h2>
+                                Quick Contact
+                            </h2>
+                        </div>
+                        <div class="contact__box-descr">
+                            <p>
+                                Some text goes here some text goes here Some text goes here some text goes hereSome text
+                                goes here some text goes hereSome text goes here some text goes here
+                            </p>
+                        </div>
+                        <div class="contact__box-inner">
+                            <div class="contact__box-item">
+                                <h4>
+                                    We will help you with all your questions
+                                </h4>
+                                <p>
+                                    Alle Fragen rund um Advergy gerne an <a href="#">info@advergy.de</a> oder
+                                    telefonisch unter <a href="tel:+49 (0) 40 609 44 00-0">+49 (0) 40 609 44 00-0</a>
+                                </p>
+                            </div>
+                            <div class="contact__box-item">
+                                <h4>
+                                    Want to become Advergy Employee?
+                                </h4>
+                                <p>
+                                    Für Fragen bzgl. einer Karriere bei Advergy kontaktiere unsere liebe Sarra aus dem
+                                    HR unter: <a href="mailto:hr@advergy.de">hr@advergy.de</a> oder telefonisch unter <a
+                                        href="tel:+49 (0) 40 609 44 00 64">+49 (0) 40 609 44 00 64</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo-footer.svg" alt="img"></a>
+                    <p>
+                        Seit Gründung 2010 versteht sich die ADVERGY GmbH als starker Partner für Kunden und
+                        Kandidaten und widmet sich jeder Vakanz mit voller Aufmerksamkeit.
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Für Unternehmen</a>
+                                <ul>
+                                    <li><a href="#">Job suchen</a></li>
+                                    <li><a href="#">Tipps für Contracting</a></li>
+                                    <li><a href="#">Tipps für Festanstellung</a></li>
+                                    <li><a href="#">Lebenslauf einreichen</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Für Festangestellte</a>
+                                <ul>
+                                    <li><a href="#">Recruiting Prozess</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">FÜR FREELANCER</a>
+                            </li>
+                            <li>
+                                <a href="#">Starte durch bei ADVERGY</a>
+                            </li>
+                            <li>
+                                <a href="#">KONTAKT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    2010. – 2022. © ADVERGY. Alle Rechte vorbehalten.
+                </p>
+                <ul>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modals -->
+    <div class="popup__window hide filepopup fp1">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window hide filepopup fp2">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment1" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl1" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window hide filepopup fp3">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment2" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl2" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window hide filepopup fp4">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <p class="title">Dateien als Anhang hochladen</p>
+
+                    <div class="file-upload">
+                        <p>Dateien hineinziehen und ablegen oder <span>durchsuchen</span></p>
+                        <input type="file" name="FileAttachment" id="FileAttachment3" class="upload" />
+                    </div>
+
+                    <div class="file-uploadresult">
+                        <p class="title">Deine hochgeladene Dateien</p>
+                        <div class="uplwrap">
+                            <div class="hidesect">
+                                <img class="uplimg" src="img/fileupload.svg" alt="img">
+                                <p>Die von Dir hochgeladenen Dateien werden hier angezeigt</p>
+                            </div>
+                            <div class="filewrapper">
+                                <button class="clearinput">
+                                    <img src="img/delete.svg" alt="delete">
+                                </button>
+                                <input type="text" id="fileuploadurl3" readonly>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="filepopup__btns">
+                        <button class="bordwhitebtn">Speichern</button>
+                        <button class="bluebtn" disabled>Hinzufügen</button>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window typ1">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body contact-popup">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <h4>
+                        Wir bedanken uns für deine Anfrage und freuen uns Dich bald persönlich kennenzulernen.
+                    </h4>
+                    <p>
+                        Deinen Anfrage wird nun an einen spezialisierte Berater weitergeleitet, der sich demnächst
+                        persönlich bei Dir melden wird.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window typ2">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body contact-popup">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <h4>
+                        Großartig !
+                    </h4>
+                    <p>
+                        Der erste Schritt ist gemacht - nun leiten wir diese Anfrage an den entsprechend spezialisierten Berater, der sich in Kürze bei dir melden wird.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__window typ3">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body contact-popup">
+                    <div class="popup__close">
+                        <img src="img/new/Close.svg" alt="close">
+                    </div>
+                    <h4>
+                        Großartig !
+                    </h4>
+                    <p>
+                        Der erste Schritt ist getan - nun werden Sarra & Micha Deine Bewerbung sichten & dich zeitnah kontaktieren.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
