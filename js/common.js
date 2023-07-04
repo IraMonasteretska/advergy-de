@@ -339,7 +339,7 @@ $(document).ready(function () {
             },
         });
     }
-    
+
 
     if ($('*').is('.googlereviews__slider')) {
         var swiper = new Swiper(".googlereviews__slider", {
@@ -424,7 +424,7 @@ $(document).ready(function () {
 
 
 
-    
+
 
 
 
@@ -638,12 +638,21 @@ $(document).ready(function () {
 
 
     // accordion business areas
-    $('.open-accordion').on('click', function() {
+    $('.open-accordion').on('click', function () {
         $(this).closest('.ac-body').toggleClass('active');
         $(this).closest('.ac-body').children('.ac-content').slideToggle();
     })
 
 
+        // offene tabs
+        $('.offene__tab').on('click', function () {
+            var dataClass = $(this).attr('data-tab');
+            $('.faqsaccordeon').removeClass('show').hide();
+            $('.offene__tab').removeClass('active');
+            $(this).addClass('active');
+            $('.' + dataClass).addClass('show').fadeIn(300);
+            return false;
+        });
 
     // contact tabs
     $('.contact__tab').on('click', function () {
@@ -652,6 +661,57 @@ $(document).ready(function () {
         $('.contact__tab').removeClass('active');
         $(this).addClass('active');
         $('.' + dataClass).addClass('active-box').fadeIn(500);
+        return false;
+    });
+
+    //specialization slider
+    if ($('*').is('.specialization-slider')) {
+        var swiper = new Swiper(".specialization-slider", {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 20,
+            speed: 700,
+            loop: true,
+            // mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    autoHeight: true,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    autoHeight: false,
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    autoHeight: false,
+                },
+            },
+        });
+    }
+
+
+    // team tabs
+    $('.team-tab').on('click', function () {
+        var dataClass = $(this).attr('data-tab');
+        $('.team__content').removeClass('show').hide();
+        $('.team-tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('show').fadeIn(300);
         return false;
     });
 
