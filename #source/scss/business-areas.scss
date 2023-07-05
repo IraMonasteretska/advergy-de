@@ -3,6 +3,7 @@
 .ba-welcomesect {
     width: 100%;
     height: calc(100vh - 80px);
+    min-height: 800px;
     overflow: hidden;
     position: relative;
 
@@ -422,24 +423,76 @@
     }
 }
 
-.ba-workflow__infobox:nth-child(even){
+.ba-workflow__infobox:nth-child(even) {
     background: #FFF;
-    h4{
+
+    h4 {
         color: #2F7DDE;
     }
-    p{
+
+    p {
         color: rgba(42, 42, 42, 0.75);
     }
-    ul{
+
+    ul {
         color: rgba(42, 42, 42, 0.75);
     }
 }
 
-.ba-workflow__imagebox{
+.ba-workflow__imagebox {
     width: calc(50% - 20px);
-    img{
+
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+}
+
+
+//  adaptive ------------------------------- //
+
+@media (max-width: 991.8px) {
+
+    .ba-welcomesect__info {
+        width: 60%;
+    }
+
+    .ba-welcomesect {
+        height: 650px;
+        min-height: initial;
+    }
+
+}
+
+@media (max-width: 767.8px) {
+    .ba-welcomesect__info {
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+
+    .ba-welcomesect__infowrap {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+
+    .ba-welcomesect__bottom {
+        display: none;
+    }
+}
+
+
+@media (max-width: 575.8px) {
+
+    .ba-welcomesect__info {
+        padding-left: 20px !important;
+        padding-right: 20px;
+    }
+
+    .ba-welcomesect {
+        height: calc(100vh - 60px);
+    }
+
 }
