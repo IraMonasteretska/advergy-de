@@ -200,16 +200,19 @@
     box-shadow: 0px 4px 8px 0px rgba(23, 95, 185, 0.05);
     padding: 40px 12px 20px 24px;
     margin-bottom: 40px;
+    height: fit-content;
 
     >h2 {
         margin-bottom: 0;
         color: #2a2a2a;
+        line-height: 150%;
     }
 }
 
 .ba-workflow__accordion-inner {
     padding-right: 20px;
     overflow: auto;
+    max-height: 950px;
 
     &::-webkit-scrollbar {
         background: #F2F4F8;
@@ -367,7 +370,6 @@
     background: #fff;
     padding: 28px 24px;
     width: 100%;
-    margin-bottom: 40px;
 
     h4 {
         color: #2A2A2A;
@@ -397,7 +399,7 @@
             border-radius: 8px;
             overflow: hidden;
             display: block;
-            min-height: 288px;
+            height: 288px;
 
             &+li {
                 margin-top: 20px;
@@ -841,7 +843,8 @@
             font-size: 16px;
             font-weight: 600;
             line-height: 130%;
-            &+li{
+
+            &+li {
                 margin-top: 10px;
             }
         }
@@ -856,6 +859,7 @@
     &.image {
         padding: 0;
     }
+
     &.white {
         background: #FFF;
         color: rgba(42, 42, 42, 0.75);
@@ -946,15 +950,108 @@
 //  -------------  ADAPTIVE ----------------------- //
 //  ---------------------------------------------- //
 
+@media (max-width: 1399.8px) {
+    .ba-workflow__offerbox ul li {
+        height: 250px;
+    }
+
+    .ba-workflow__accordion-inner {
+        max-height: 845px;
+    }
+
+    .ba-workflow__accordion {
+        width: 59%;
+        padding: 30px 10px 15px 20px;
+    }
+
+    .ba-workflow__accordion>h2 {
+        font-size: 28px;
+    }
+
+    .ba-workflow__accordion-body {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ba-workflow__accordion-index {
+        font-size: 36px;
+    }
+
+    .ba-workflow__accordion-header {
+        padding-left: 50px;
+    }
+
+    .ba-workflow__accordion-content {
+        padding-left: 50px;
+        padding-top: 0;
+    }
+
+    .ba-workflow__offerbox h4 {
+        font-size: 28px;
+    }
+
+    .ba-workflow__offerbox p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .ba-workflow__accordion-inner {
+        max-height: 780px;
+    }
+    .ba-workflow__offerbox ul li span {
+        padding: 13px 18px;
+    }
+    .ba-workflow__offerbox ul li {
+        height: 230px;
+    }
+    .ba-workflow__offerbox {
+        padding: 26px 20px;
+    }
+}
+
 @media (max-width: 991.8px) {
+    .ba-welcomesect__info .ba-welcomesect__infowrap .linetext {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .ba-welcomesect__bottom ul li+li {
+        margin-left: 20px;
+        padding-left: 20px;
+    }
 
     .ba-welcomesect__info {
         width: 60%;
     }
 
     .ba-welcomesect {
-        height: 650px;
+        height: 680px;
         min-height: initial;
+    }
+
+    .ba-employment {
+        padding: 60px 0 200px;
+    }
+    .ba-workflow__accordion {
+        width: 100%;
+    }
+    .ba-workflow__offer {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .ba-workflow__content {
+        margin-top: -190px;
+    }
+    .ba-workflow__accordion-inner {
+        max-height: 100%;
+        overflow: initial;
+    }
+    .ba-workflow__accordion-content .index {
+        font-size: 140px;
+        top: 30%;
+        right: 9px;
     }
 
 }
