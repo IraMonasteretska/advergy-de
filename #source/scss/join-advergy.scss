@@ -227,6 +227,7 @@
     .accmanbtn.active {
         background: #fff;
         border: 2px solid #1C4B85;
+
         &:hover {
             background: #1C4B85;
             color: #fff;
@@ -295,9 +296,10 @@
     }
 }
 
-.faqsaccordeon{
+.offenevakanzen__left .faqsaccordeon {
     display: none;
-    &.show{
+
+    &.show {
         display: block;
     }
 }
@@ -583,6 +585,219 @@
     }
 }
 
+.socialwidget {
+    position: fixed;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(28, 75, 133, 0.15);
+    padding: 40px 16px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: block;
+        list-style: none;
+        text-align: center;
+
+        &+li {
+            margin-top: 48px;
+        }
+    }
+
+    img {
+        max-width: 70px;
+        background-size: cover;
+    }
+
+    a {
+        display: block;
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// benefits section --------------------- //
+.jabenefits {
+    padding: 60px 0;
+    background-color: #E8ECF2;
+}
+
+.jabenefits__title {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 5px;
+    }
+}
+
+.jabenefits__subtitle {
+    margin-bottom: 24px;
+
+    p {
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+    }
+}
+
+.jabenefits__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.jabenefits-tab {
+    border-radius: 8px;
+    color: #1C4B85;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 12px 28px;
+    margin-bottom: 0;
+    background: #FFF;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+
+    &.active {
+        background: #1C4B85;
+        color: #fff;
+    }
+
+    &+.jabenefits-tab {
+        margin-left: 18px;
+    }
+}
+
+.jabenefits__content {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+
+.jabenefits__content-item {
+    width: 100%;
+    height: 242px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &.vertblock {
+        flex-direction: column;
+        height: 508px;
+
+        .jabenefits__item-img {
+            width: 100%;
+            height: 72%;
+        }
+
+        .jabenefits__item-text {
+            width: 100%;
+            height: 28%;
+        }
+    }
+
+    &.vertblock2 {
+        flex-direction: column;
+        height: 370px;
+
+        .jabenefits__item-img {
+            width: 100%;
+            height: 72%;
+        }
+
+        .jabenefits__item-text {
+            width: 100%;
+            height: 28%;
+        }
+    }
+
+    &.vertblock3 {
+        flex-direction: column;
+        height: 774px;
+
+        .jabenefits__item-img {
+            width: 100%;
+            height: 72%;
+        }
+
+        .jabenefits__item-text {
+            width: 100%;
+            height: 28%;
+        }
+    }
+
+    &.vertblock4 {
+        flex-direction: column;
+        height: 376px;
+
+        .jabenefits__item-img {
+            width: 100%;
+            height: 72%;
+        }
+
+        .jabenefits__item-text {
+            width: 100%;
+            height: 28%;
+        }
+    }
+}
+
+.jabenefits__item-text {
+    word-break: break-all;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: rgba(42, 42, 42, 0.75);
+    width: 28%;
+    height: 100%;
+}
+
+.jabenefits__item-img {
+    width: 72%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+//  ADAPTIVE ----------------------- //
+//  ------------------------------- //
 
 @media(max-width:1300.8px) {
     .recprocess__box {
@@ -591,6 +806,26 @@
 
     .recprocess__box {
         padding: 33px 32px;
+    }
+
+    .jabenefits__content-item {
+        height: 220px;
+    }
+
+    .jabenefits__content-item.vertblock {
+        height: 464px;
+    }
+
+    .jabenefits__content-item.vertblock4 {
+        height: 342px;
+    }
+
+    .jabenefits__content-item.vertblock3 {
+        height: 709px;
+    }
+
+    .jabenefits__content-item.vertblock2 {
+        height: 350px;
     }
 }
 
@@ -630,6 +865,35 @@
 }
 
 @media(max-width:991.8px) {
+    .jabenefits__content-item {
+        height: 240px;
+        flex-direction: column-reverse;
+
+        .jabenefits__item-img {
+            width: 100%;
+            height: 72%;
+        }
+
+        .jabenefits__item-text {
+            width: 100%;
+            height: 28%;
+        }
+
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .jabenefits__content-item.vertblock,
+    .jabenefits__content-item.vertblock2,
+    .jabenefits__content-item.vertblock3,
+    .jabenefits__content-item.vertblock4 {
+        height: 240px;
+        &:nth-child(2n) {
+            flex-direction: column;
+        }
+    }
+
     .welcomesect.smheight.ja {
         height: 475px;
         min-height: initial;
@@ -775,6 +1039,23 @@
 }
 
 @media(max-width:767.8px) {
+    .jabenefits__tabs {
+        flex-wrap: wrap;
+    }
+
+    .jabenefits-tab {
+        width: 100%;
+
+        &+.jabenefits-tab {
+            margin: 15px 0 0;
+        }
+
+    }
+
+    .socialwidget {
+        display: none;
+    }
+
     .joinus__leftsect {
         .dtext {
             font-size: 18px;

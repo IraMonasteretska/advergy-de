@@ -644,15 +644,15 @@ $(document).ready(function () {
     })
 
 
-        // offene tabs
-        $('.offene__tab').on('click', function () {
-            var dataClass = $(this).attr('data-tab');
-            $('.faqsaccordeon').removeClass('show').hide();
-            $('.offene__tab').removeClass('active');
-            $(this).addClass('active');
-            $('.' + dataClass).addClass('show').fadeIn(300);
-            return false;
-        });
+    // offene tabs
+    $('.offene__tab').on('click', function () {
+        var dataClass = $(this).attr('data-tab');
+        $('.faqsaccordeon').removeClass('show').hide();
+        $('.offene__tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('show').fadeIn(300);
+        return false;
+    });
 
     // contact tabs
     $('.contact__tab').on('click', function () {
@@ -686,19 +686,16 @@ $(document).ready(function () {
                 320: {
                     slidesPerView: 1,
                     slidesPerGroup: 1,
-                    autoHeight: true,
                 },
 
                 768: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
-                    autoHeight: false,
                 },
 
                 992: {
                     slidesPerView: 3,
                     slidesPerGroup: 3,
-                    autoHeight: false,
                 },
             },
         });
@@ -710,6 +707,16 @@ $(document).ready(function () {
         var dataClass = $(this).attr('data-tab');
         $('.team__content').removeClass('show').hide();
         $('.team-tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('show').fadeIn(300);
+        return false;
+    });
+
+    // jabenefits tabs
+    $('.jabenefits-tab').on('click', function () {
+        var dataClass = $(this).attr('data-tab');
+        $('.jabenefits__content').removeClass('show').hide();
+        $('.jabenefits-tab').removeClass('active');
         $(this).addClass('active');
         $('.' + dataClass).addClass('show').fadeIn(300);
         return false;

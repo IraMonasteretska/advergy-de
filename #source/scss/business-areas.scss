@@ -454,10 +454,10 @@
     h4 {
         color: #FFF;
         font-size: 22px;
-        font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        margin-bottom: 10px;
     }
 
     p {
@@ -532,6 +532,8 @@
 
 .ba-workflow__imagebox {
     width: calc(50% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
 
     img {
         width: 100%;
@@ -542,7 +544,7 @@
 
 .ba-workflow__about {
     width: calc(50% - 20px);
-    padding: 40px;
+    padding: 40px 40px 15px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(28, 75, 133, 0.05);
@@ -553,6 +555,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
+        margin-bottom: 10px;
     }
 
     p {
@@ -603,6 +606,12 @@
     }
 }
 
+.ba-workflow.weoffer {
+    .ba-workflow__accordion-inner {
+        max-height: 642px;
+    }
+}
+
 .ba-weoffer__item {
     position: relative;
     width: 100%;
@@ -610,7 +619,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    border-radius: 8px;
+    overflow: hidden;
 
 
     span {
@@ -807,7 +817,7 @@
 }
 
 .ba-consulting__left {
-    width: 39%;
+    width: 38%;
 }
 
 .ba-consulting__right {
@@ -951,6 +961,83 @@
 //  ---------------------------------------------- //
 
 @media (max-width: 1399.8px) {
+    .ba-consulting__rightblock h4 {
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .ba-consulting__row {
+        padding: 25px 20px 25px 20px;
+    }
+
+    .ba-consulting__leftblock {
+        padding: 20px 30px;
+    }
+
+    .ba-consulting__row-content {
+        padding-left: 20px;
+    }
+
+    .ba-consulting__row+.ba-consulting__row {
+        margin-top: 20px;
+    }
+
+    .ba-consulting__rightblock {
+        padding: 30px 20px;
+    }
+
+    .ba-consulting__left {
+        width: 39%;
+    }
+
+    .ba-consulting__leftblock+.ba-consulting__leftblock {
+        margin-top: 20px;
+    }
+
+    .ba-consulting__right {
+        width: 59%;
+    }
+
+    .ba-workflow__content-left {
+        width: 39%;
+    }
+
+    .ba-workflow__content-right {
+        width: 59%;
+    }
+
+    .ba-weoffer__item img {
+        height: 320px;
+    }
+
+    .ba-weoffer__title p {
+        font-size: 18px;
+    }
+
+    .ba-weoffer__title h3 {
+        font-size: 28px;
+    }
+
+    .ba-weoffer__inner .col-lg-4:first-child .ba-weoffer__item img {
+        height: 260px;
+    }
+
+    .ba-workflow__about {
+        width: 49%;
+        padding: 30px 25px 0;
+    }
+
+    .ba-workflow__imagebox {
+        width: 49%;
+    }
+
+    .ba-workflow__infobox {
+        width: 49%;
+        margin-bottom: 25px;
+        padding: 30px 25px;
+        min-height: 420px;
+    }
+
     .ba-workflow__offerbox ul li {
         height: 250px;
     }
@@ -959,9 +1046,14 @@
         max-height: 845px;
     }
 
+    .ba-workflow__offer {
+        margin-bottom: 25px;
+    }
+
     .ba-workflow__accordion {
         width: 59%;
         padding: 30px 10px 15px 20px;
+        margin-bottom: 25px;
     }
 
     .ba-workflow__accordion>h2 {
@@ -997,21 +1089,174 @@
 }
 
 @media (max-width: 1199.8px) {
+    .ba-contract__right {
+        padding: 40px 30px;
+    }
+
+    .ba-contract__servitem {
+        padding: 16px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .ba-contract__left {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .ba-weoffer__title {
+        flex-wrap: wrap;
+    }
+
+    .ba-weoffer__inner .col-lg-4:first-child .ba-weoffer__item img {
+        height: 190px;
+    }
+
+    .ba-weoffer__item img {
+        height: 260px;
+    }
+
+    .ba-workflow__offer {
+        margin-bottom: 20px;
+    }
+
+    .ba-workflow__accordion {
+        margin-bottom: 20px;
+    }
+
+    .ba-workflow__infobox {
+        margin-bottom: 20px;
+    }
+
     .ba-workflow__accordion-inner {
         max-height: 780px;
     }
+
     .ba-workflow__offerbox ul li span {
         padding: 13px 18px;
     }
+
     .ba-workflow__offerbox ul li {
         height: 230px;
     }
+
     .ba-workflow__offerbox {
-        padding: 26px 20px;
+        padding: 25px 20px;
     }
 }
 
 @media (max-width: 991.8px) {
+    .ba-workflow.weoffer .ba-workflow__accordion-inner {
+        max-height: fit-content;
+    }
+
+    .ba-consulting__rightblock h4 {
+        font-size: 26px;
+    }
+
+    .ba-weoffer__title h3 {
+        font-size: 26px;
+    }
+
+    .ba-consulting__inner {
+        margin-top: -190px;
+    }
+
+    .ba-consulting__inner {
+        flex-wrap: wrap;
+    }
+
+    .ba-consulting__left {
+        width: 100%;
+        order: 2;
+    }
+
+    .ba-consulting__right {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 1;
+    }
+
+    .ba-contract {
+        flex-wrap: wrap;
+    }
+
+    .ba-contract__services {
+        margin-bottom: 30px;
+    }
+
+    .ba-contract__left {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .ba-contract__right {
+        padding: 20px;
+    }
+
+    .ba-contract__servitem {
+        width: 30%;
+    }
+
+    .ba-contract__left {
+        width: 100%;
+    }
+
+    .ba-contract__right {
+        width: 100%;
+        height: auto;
+    }
+
+    .ba-workflow__content-left .ba-workflow__imagebox {
+        height: 320px;
+        margin-bottom: 20px;
+    }
+
+    .ba-workflow__content-right,
+    .ba-workflow__content-left {
+        width: 100%;
+    }
+
+    .ba-weoffer__inner {
+        padding: 20px 20px 10px;
+        margin-bottom: 20px;
+    }
+
+    .ba-weoffer__title {
+        margin-bottom: 15px;
+    }
+
+    .ba-weoffer__inner .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    .ba-weoffer__inner .col-lg-4:first-child .ba-weoffer__item img {
+        height: 240px;
+    }
+
+    .ba-weoffer__item img {
+        height: 240px;
+    }
+
+    .ba-workflow__imagebox {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .ba-workflow__about {
+        width: 100%;
+    }
+
+    .ba-workflow {
+        padding: 40px 0 50px;
+    }
+
+    .ba-workflow__infobox {
+        width: 100%;
+        min-height: fit-content;
+    }
+
     .ba-welcomesect__info .ba-welcomesect__infowrap .linetext {
         font-size: 18px;
         line-height: 130%;
@@ -1031,23 +1276,33 @@
         min-height: initial;
     }
 
+    .ba-workflow__infobox p {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
     .ba-employment {
         padding: 60px 0 200px;
     }
+
     .ba-workflow__accordion {
         width: 100%;
     }
+
     .ba-workflow__offer {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
+
     .ba-workflow__content {
         margin-top: -190px;
     }
+
     .ba-workflow__accordion-inner {
         max-height: 100%;
         overflow: initial;
     }
+
     .ba-workflow__accordion-content .index {
         font-size: 140px;
         top: 30%;
@@ -1057,6 +1312,81 @@
 }
 
 @media (max-width: 767.8px) {
+    .ba-contract__servitem p {
+        font-size: 12px;
+    }
+
+    .ba-contract__servitem {
+        width: 32%;
+        padding: 15px 5px;
+    }
+
+    .ba-workflow__about p {
+        margin-bottom: 18px;
+    }
+
+    .ba-workflow__accordion-header h4 {
+        font-size: 18px;
+    }
+
+    .ba-workflow__offerbox h4 {
+        font-size: 26px;
+    }
+
+    .ba-workflow__offerbox p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .ba-workflow__accordion-arrow {
+        height: 30px;
+        width: 30px;
+    }
+
+    .ba-workflow__accordion-content .index {
+        font-size: 100px;
+        right: 15px;
+    }
+
+    .ba-workflow__accordion-content ul li {
+        font-size: 14px;
+        padding-left: 12px;
+
+        &:before {
+            top: 7px;
+            height: 5px;
+            width: 5px;
+        }
+    }
+
+    .ba-workflow__accordion-arrow img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .ba-workflow__accordion-header {
+        padding-left: 40px;
+        padding-right: 45px;
+    }
+
+    .ba-workflow__accordion-content {
+        padding-left: 40px;
+        padding-right: 45px;
+    }
+
+    .ba-workflow__accordion>h2 {
+        font-size: 26px;
+    }
+
+    .ba-workflow__accordion-index {
+        font-size: 28px;
+        left: 5px;
+    }
+
+    .ba-workflow__accordion-header b {
+        font-size: 14px;
+    }
+
     .ba-welcomesect__info {
         width: 100%;
         padding-left: 0 !important;
@@ -1076,6 +1406,148 @@
 
 
 @media (max-width: 575.8px) {
+    .ba-consulting {
+        padding: 40px 0 40px;
+    }
+
+    .ba-consulting__leftblock h4 {
+        font-size: 18px;
+    }
+
+    .ba-consulting__leftblock ul li {
+        font-size: 14px;
+    }
+
+    .ba-consulting__leftblock {
+        padding: 20px;
+    }
+
+    .ba-consulting__rightblock h4 {
+        font-size: 22px;
+    }
+
+    .ba-consulting__row {
+        padding: 0px 15px 20px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ba-consulting__row-content {
+        padding-top: 10px;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #D4DCE7;
+    }
+
+    .ba-consulting__row-index span {
+        font-size: 36px;
+    }
+
+    .ba-consulting__row-index {
+        padding-right: 20px;
+    }
+
+    .ba-employment__logo {
+        width: 180px;
+    }
+
+    .ba-consulting__row-content h5 {
+        font-size: 16px;
+        word-break: break-all;
+    }
+
+    .ba-employment__btn a {
+        width: 100%;
+
+        +a {
+            margin: 15px 0 0;
+        }
+    }
+
+    .ba-workflow__accordion-header {
+        padding-left: 15px;
+        padding-right: 35px;
+    }
+
+    .ba-workflow__accordion-content {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .ba-workflow__accordion-index {
+        font-size: 22px;
+        left: -10px;
+    }
+
+    .ba-workflow__accordion-header h4 {
+        font-size: 16px;
+        word-break: break-all;
+    }
+
+    .ba-contract__services {
+        flex-wrap: wrap;
+    }
+
+    .ba-contract__servitem {
+        width: 100%;
+        padding: 15px 5px;
+
+        &+.ba-contract__servitem {
+            margin-top: 15px;
+        }
+    }
+
+    .ba-workflow__about h5 {
+        font-size: 18px;
+        ;
+    }
+
+    .ba-weoffer__item span {
+        font-size: 14px;
+    }
+
+    .ba-workflow__imagebox {
+        height: 250px;
+    }
+
+    .ba-weoffer__item img {
+        height: 200px;
+    }
+
+    .ba-workflow__content-left .ba-workflow__imagebox {
+        height: 250px;
+    }
+
+    .ba-weoffer__item span {
+        padding: 14px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .ba-workflow__offerbox ul li span {
+        font-size: 14px;
+        padding: 14px 14px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .ba-workflow__infobox h4 {
+        font-size: 20px;
+    }
+
+    .ba-workflow__infobox {
+        padding: 25px 20px;
+    }
+
+    .ba-workflow__infobox li {
+        font-size: 14px;
+    }
+
+    .ba-workflow__offerbox ul li {
+        height: 200px;
+    }
 
     .ba-welcomesect__info {
         padding-left: 20px !important;
@@ -1085,5 +1557,4 @@
     .ba-welcomesect {
         height: calc(100vh - 60px);
     }
-
 }
