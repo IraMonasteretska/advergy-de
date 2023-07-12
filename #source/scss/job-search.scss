@@ -283,6 +283,8 @@
 
 //  RESULT FORM //
 
+
+
 .mobile-frame {
     display: none;
 }
@@ -299,6 +301,23 @@
         transform: translateX(100%);
     }
 }
+
+.js-result__form-wrap{
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        background: #F2F4F8;
+        border-radius: 4px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #D4DCE7;
+        border-radius: 4px;
+    }
+    max-height: calc(100vh - 190px);
+    display: block;
+}
+
 
 .js-result__form-head {
     padding: 40px;
@@ -925,6 +944,12 @@
 
 @media (max-width: 1399.8px) {
 
+    .js-result__form-wrap{
+        overflow-y: initial;
+        max-height: 100%;
+        display: none;
+    }
+
     .js-result__item {
         max-width: 100%;
         width: 100%;
@@ -1017,10 +1042,6 @@
         position: sticky!important;
         top: 60px;
     }
-
-    // .pagewrapper{
-    //     overflow: initial;
-    // }
 
 
     .js-heroscreen__info {

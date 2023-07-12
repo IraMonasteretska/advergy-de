@@ -737,7 +737,7 @@
     padding: 39px 39px 10px 30px;
     background: #1C4B85;
 
-    h5 {
+    h1,h2,h3,h4,h5 {
         color: #FFF;
         font-size: 20px;
         font-style: normal;
@@ -776,7 +776,7 @@
         padding: 18px 32px;
         height: 33.33%;
 
-        h5 {
+        h1,h2,h3,h4,h5 {
             color: #FFF;
             font-size: 20px;
             font-style: normal;
@@ -808,7 +808,7 @@
     .team__content-info {
         background: #fff;
 
-        h5 {
+        h1,h2,h3,h4,h5 {
             color: #2C69B5;
         }
 
@@ -820,7 +820,7 @@
     .dropbox-content {
         background: #fff;
 
-        h5 {
+        h1,h2,h3,h4,h5 {
             color: #2C69B5;
         }
 
@@ -894,9 +894,11 @@
         padding: 16px 18px;
     }
 
-    .team__content-info h5 {
-        font-size: 18px;
-        line-height: 130%;
+    .team__content-info  {
+        h1,h2,h3,h4,h5{
+            font-size: 18px;
+            line-height: 130%;
+        }
     }
 
     .for-companies__team-right p {
@@ -1035,8 +1037,10 @@
         font-size: 14px;
     }
 
-    .team__content-info h5 {
-        font-size: 16px;
+    .team__content-info {
+        h1,h2,h3,h4,h5{
+            font-size: 16px;
+        }
     }
 
     .for-companies__team-tabs .team-tab {
@@ -1151,8 +1155,10 @@
         font-size: 16px;
     }
 
-    .team__content-info h5 {
-        font-size: 20px;
+    .team__content-info {
+        h1,h2,h3,h4,h5{
+            font-size: 20px;
+        }
     }
 
     .workflow-left__box .box-descr span {
@@ -1303,8 +1309,10 @@
         padding: 10px 15px 10px 15px;
     }
 
-    .team__content-info h5 {
-        font-size: 16px;
+    .team__content-info {
+        h1,h2,h3,h4,h5{
+            font-size: 16px;
+        }
     }
 
     .team__content-info p {
@@ -1444,8 +1452,10 @@
     .team__content-dropbox {
         height: 150vw;
     }
-    .team__content-info h5 {
-        font-size: 14px;
+    .team__content-info {
+        h1,h2,h3,h4,h5{
+            font-size: 14px;
+        }
     }
 
     .team__content-item {

@@ -796,10 +796,14 @@
 
 
 
+
+
+
 //  ADAPTIVE ----------------------- //
 //  ------------------------------- //
 
 @media(max-width:1300.8px) {
+
     .recprocess__box {
         margin-bottom: 26px;
     }
@@ -889,6 +893,7 @@
     .jabenefits__content-item.vertblock3,
     .jabenefits__content-item.vertblock4 {
         height: 240px;
+
         &:nth-child(2n) {
             flex-direction: column;
         }
@@ -1075,6 +1080,18 @@
 }
 
 @media(max-width:575.8px) {
+    .jabenefits__content-item {
+        height: auto;
+
+        .jabenefits__item-img {
+            height: 150px;
+        }
+    }
+
+    .jabenefits__content-item .jabenefits__item-text {
+        height: auto;
+    }
+
     .welcomesect.smheight.ja {
         height: calc(100vh - 60px);
     }
