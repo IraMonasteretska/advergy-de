@@ -39,6 +39,7 @@ $(document).ready(function () {
     // mobmenu
     $('.linkarr').click(function () {
         $(this).siblings('.submenu').slideToggle();
+        $(this).siblings('.sub-menu').slideToggle();
         $(this).toggleClass('rotate');
     });
 
@@ -247,7 +248,7 @@ $(document).ready(function () {
         var swiper2 = new Swiper(".guidelinesforcv__slider", {
             spaceBetween: 47,
             slidesPerView: 1.8,
-            mousewheel: true,
+            // mousewheel: true,
             slidesOffsetAfter: 300,
             thumbs: {
                 swiper: swiper,
@@ -263,7 +264,7 @@ $(document).ready(function () {
                 },
 
                 575: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1,
                     spaceBetween: 30,
                     slidesOffsetAfter: 300,
                 },
@@ -443,8 +444,8 @@ $(document).ready(function () {
 
 
 
-
-
+    // moved to search.js
+    // job search form accordion
     // job search form accordion 
     $('.js-result__form-name').on('click', function () {
         $(this).parent('.js-result__form-item').toggleClass('active');
@@ -462,9 +463,21 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.popup__close').on('click', function () {
+    $('.popup__close, .closepopup').on('click', function () {
         $('.popup__window').removeClass('active');
     });
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.popup__body').length) {
+            $('.popup__window').removeClass('active');
+        }
+    });
+
+    $('.popup__close, .closepopup, .popup__window').on('click', function (event) {
+        if ($(event.target).hasClass('popup__window') || $(event.target).hasClass('popup__wrapper') || $(event.target).hasClass('popup__close') || $(event.target).hasClass('closepopup')) {
+            $('.popup__window').removeClass('active');
+        }
+    });
+
 
     // customselect
     if ($('*').is('.customselect')) {
@@ -604,12 +617,18 @@ $(document).ready(function () {
 
 
 
-    // delete frame 
-
+    // hide frame 
     $('.close-frame').on('click', function (e) {
         e.preventDefault;
-        $(this).closest('.scrollbox').remove();
-        $('.dp__wrapper').css('padding', 0);
+        $(this).closest('.scrollbox').addClass('small');
+        $('.dp__wrapper').addClass('no-padding');
+        return false;
+    });
+    // show frame 
+
+    $(document).on('click', '.small img', function () {
+        $(this).closest('.scrollbox').removeClass('small');
+        $('.dp__wrapper').removeClass('no-padding');
     });
 
 
@@ -722,6 +741,81 @@ $(document).ready(function () {
         return false;
     });
 
+
+    // popup thankyou 
+    document.addEventListener('wpcf7mailsent', function (event) {
+        if ('4658' == event.detail.contactFormId) {
+            $('.typ1').addClass('active');
+        } else if ('4659' == event.detail.contactFormId) {
+            $('.typ2').addClass('active');
+        } else if ('4660' == event.detail.contactFormId) {
+            $('.typ3').addClass('active');
+        } else if ('4424' == event.detail.contactFormId) {
+            $('.typ4').addClass('active');
+        } else if ('4454' == event.detail.contactFormId) {
+            $('.typ4').addClass('active');
+        } else if ('4338' == event.detail.contactFormId) {
+            $('.typ4').addClass('active');
+        }
+    }, false);
+
+
+
+
+
+    //    ------- phase 2 ------------- //
+
+    // fixed join advergy navigation on scroll --------------------------- //
+    $(window).scroll(function () {
+        var heroscreenHeight = $('.heroscreen').height();
+        var navigationBlock = $('.navigation-frame');
+        if ($(this).scrollTop() > heroscreenHeight) {
+            $(navigationBlock).addClass('fixed');
+        } else {
+            $(navigationBlock).removeClass('fixed');
+        }
+    });
+
+    // scroll to blocks
+
+    $(window).scroll(function () {
+        var scrollPos = $(document).scrollTop(); // Поточна позиція прокрутки
+        $('.navigation-frame ul li a').each(function () {
+            var currentLink = $(this);
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top <= scrollPos + 300 && refElement.position().top + refElement.height() > scrollPos + 300) {
+                $('.navigation-frame ul li a').removeClass("active"); // Видаляємо клас active з усіх посилань
+                currentLink.addClass("active"); // Додаємо клас active поточному посиланню
+            }
+            else {
+                currentLink.removeClass("active"); // Видаляємо клас active, якщо не відповідає умові
+            }
+        });
+    });
+
+
+    // mp-heroscreen - slider
+    if ($('*').is('.mp-heroscreen__slider')) {
+        var swiper = new Swiper(".mp-heroscreen__slider", {
+            slidesPerView: 1,
+            speed: 700,
+            loop: true,
+            effect: "creative",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+    }
 
 
 });
