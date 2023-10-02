@@ -1,15 +1,24 @@
 .for-companies {
+    &.ba-welcomesect {
+        // height: 550px;
+        height: 400px;
+        min-height: auto;
+    }
+
+    .ba-welcomesect__info {
+        // padding-bottom: 150px;
+        padding-bottom: 0;
+    }
 
     .ba-welcomesect__bottom {
         ul {
             margin: 0;
             padding: 0;
-
-            li+li {
-                margin-left: 70px;
-                padding-left: 70px;
+            li a {
+                font-size: 17px;
             }
         }
+         
     }
 }
 
@@ -147,27 +156,7 @@
 .for-companies__business {
     padding: 60px 0;
     position: relative;
-    background: rgba(#D4DCE7, .5);
-
-    &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 35%;
-        left: 0;
-        top: 0;
-        background: #143E72
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 20%;
-        left: 0;
-        bottom: 0;
-        background: #F2F4F8;
-    }
+    background: linear-gradient(0deg, #344A66 0%, #1E5488 100%);
 }
 
 .for-companies__business-title {
@@ -231,6 +220,11 @@
         width: 100%;
         object-fit: cover;
         border-radius: 4px;
+    }
+}
+.for-companies__business-col{
+    p{
+        min-height: 120px;
     }
 }
 
@@ -737,7 +731,11 @@
     padding: 39px 39px 10px 30px;
     background: #1C4B85;
 
-    h1,h2,h3,h4,h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         color: #FFF;
         font-size: 20px;
         font-style: normal;
@@ -776,7 +774,11 @@
         padding: 18px 32px;
         height: 33.33%;
 
-        h1,h2,h3,h4,h5 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             color: #FFF;
             font-size: 20px;
             font-style: normal;
@@ -808,7 +810,11 @@
     .team__content-info {
         background: #fff;
 
-        h1,h2,h3,h4,h5 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             color: #2C69B5;
         }
 
@@ -820,7 +826,11 @@
     .dropbox-content {
         background: #fff;
 
-        h1,h2,h3,h4,h5 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             color: #2C69B5;
         }
 
@@ -894,8 +904,13 @@
         padding: 16px 18px;
     }
 
-    .team__content-info  {
-        h1,h2,h3,h4,h5{
+    .team__content-info {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-size: 18px;
             line-height: 130%;
         }
@@ -1010,8 +1025,8 @@
     }
 
     .for-companies .ba-welcomesect__bottom ul li+li {
-        margin-left: 40px;
-        padding-left: 40px;
+        margin-left: 25px;
+        padding-left: 25px;
     }
 
     .for-companies__widget img {
@@ -1038,7 +1053,12 @@
     }
 
     .team__content-info {
-        h1,h2,h3,h4,h5{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-size: 16px;
         }
     }
@@ -1112,8 +1132,12 @@
         height: 235px;
     }
 
+    .for-companies .ba-welcomesect__bottom ul li a,
     .ba-welcomesect__bottom ul li a {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .ba-welcomesect__bottom>.scrollarr {
+        bottom: 0px;
     }
 
     .ba-welcomesect__bottom ul li {
@@ -1122,6 +1146,14 @@
 }
 
 @media (max-width: 991.8px) {
+    .for-companies.ba-welcomesect {
+        height: 500px;
+    }
+
+    .for-companies .ba-welcomesect__info {
+        padding-bottom: 100px;
+    }
+
     .team__content-dropbox {
         height: 50vw;
     }
@@ -1156,7 +1188,12 @@
     }
 
     .team__content-info {
-        h1,h2,h3,h4,h5{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-size: 20px;
         }
     }
@@ -1270,8 +1307,9 @@
         }
     }
 
+    .for-companies .ba-welcomesect__bottom ul li a,
     .ba-welcomesect__bottom ul li a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .for-companies__widget {
@@ -1284,7 +1322,7 @@
     }
 
     .ba-welcomesect__bottom {
-        padding: 30px 0 40px;
+        padding: 30px 0 30px;
     }
 
     .ba-welcomesect__bottom>.scrollarr {
@@ -1294,9 +1332,16 @@
 
 
 @media (max-width: 767.8px) {
+    .for-companies.ba-welcomesect {
+    height: 400px;
+}
+    .for-companies .ba-welcomesect__info {
+    padding-bottom: 0;
+}
     .team__content-dropbox {
         height: 75vw;
     }
+
     .team__content-dropbox img {
         height: 50%;
     }
@@ -1310,7 +1355,12 @@
     }
 
     .team__content-info {
-        h1,h2,h3,h4,h5{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-size: 16px;
         }
     }
@@ -1452,8 +1502,14 @@
     .team__content-dropbox {
         height: 150vw;
     }
+
     .team__content-info {
-        h1,h2,h3,h4,h5{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-size: 14px;
         }
     }
@@ -1558,11 +1614,5 @@
 
     .for-companies__widget img {
         display: none;
-    }
-
-    .for-companies {
-        &.ba-welcomesect {
-            height: calc(100vh - 60px);
-        }
     }
 }

@@ -1,5 +1,16 @@
 .welcomesect.welcomesect_referenzen {
-    height: 500px;
+    height: 660px;
+    .welcomesect__info {
+        width: 49%;
+        height: 100%;
+        background: linear-gradient(180deg,rgba(28,75,133,0.595) 0%,rgba(18,56,103,0.85) 100%);
+        align-items: flex-start;
+        padding-top: 120px;
+    }
+    .pi-heroscreen__bottom h2 {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
 }
 
 .testimonials, .dd {
@@ -319,6 +330,12 @@
 }
 
 @media(max-width:991.8px) {
+    .welcomesect.welcomesect_referenzen .pi-heroscreen__bottom h2 {
+        font-size: 26px;
+    }
+    .welcomesect.welcomesect_referenzen .welcomesect__info {
+        width: 58%;
+    }
     .welcomesect.welcomesect_referenzen {
         height: 475px;
     }
@@ -404,6 +421,18 @@
 }
 
 @media(max-width:767.8px) {
+    .welcomesect.welcomesect_referenzen {
+        height: 500px;
+    }
+    .welcomesect.welcomesect_referenzen .welcomesect__info {
+        align-items: center;
+    }
+    .welcomesect.welcomesect_referenzen .pi-heroscreen__bottom h2 {
+        font-size: 20px;
+    }
+    .welcomesect.welcomesect_referenzen .welcomesect__info {
+        width: 100%;
+    }
     .testimonials__box {
         min-height: initial;
     }
@@ -420,13 +449,6 @@
             max-width: 540px;
         }
     }
-
-    .welcomesect.welcomesect_referenzen {
-        height: 100vh;
-        min-height: 500px;
-    }
-
-
 
 
 }

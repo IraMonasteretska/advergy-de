@@ -28,6 +28,7 @@
     .swiper-slide {
         margin-bottom: 0 !important;
         transition: 0.3s;
+        min-height: 40px!important;
 
         &::after {
             content: '';
@@ -71,6 +72,7 @@
         line-height: 21px;
         position: relative;
         cursor: pointer;
+        display: flex;
 
         span {
             font-weight: 700;
@@ -80,6 +82,7 @@
             vertical-align: middle;
             width: 32px;
             display: inline-block;
+            padding-right: 10px;
         }
     }
 }
@@ -89,8 +92,20 @@
 }
 
 .guidelinesforcv__slide {
-    padding: 40px 40px 20px 40px;
+    position: relative;
+    padding: 40px 40px 10px;
+    min-height: 440px;
     background: #fff;
+    p{
+        margin: 0;
+        max-width: 100%;
+    }
+    img{
+        max-height: 200px;
+        max-width: 100%;
+        background-size: cover;
+        margin: 10px 5px;
+    }
 }
 
 .guidelinesforcv__img {
@@ -123,6 +138,9 @@
 }
 
 .countslide {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -142,10 +160,11 @@
 }
 
 .tipsslarrows {
+    height: 72px;
 
     .swiper-button-next,
     .swiper-button-prev {
-        top: -80px;
+        top: 0px;
         width: 72px;
         height: 72px;
         background-color: #1C4B85;
@@ -216,7 +235,6 @@
     .tipsslarrows .swiper-button-prev {
         width: 60px;
         height: 60px;
-        top: -60px;
     }
 
     .guidelinesforcv__sliderwrap {
@@ -224,7 +242,7 @@
     }
 
     .guidelinesforcv__slide {
-        padding: 20px;
+        padding: 20px 20px 10px;
     }
 
     .guidelinesforcv__descr .title {
@@ -243,6 +261,22 @@
 }
 
 @media(max-width:991.8px) {
+    .guidelinesforcv__sliderthumb {
+        height: 260px;
+    }
+    .guidelinesforcv__slide {
+        padding: 20px 20px 40px;
+        min-height: 460px;
+    }
+    .guidelinesforcv__slide img {
+        max-height: 150px;
+    }
+    .countslide {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .guidelinesforcv {
         padding: 40px 0;
@@ -281,21 +315,19 @@
         line-height: 54px;
     }
 
-
-
-
 }
 
 @media(max-width:767.8px) {
+
+    .guidelinesforcv__slide {
+        min-height: 400px;
+    }
 
     .guidelinesforcv__sliderthumb {
         display: none;
     }
 
-    .tipsslarrows .swiper-button-next,
-    .tipsslarrows .swiper-button-prev {
-        top: -50px;
-    }
+
 
     .dp-question.dp-question__tips {
         .dp-question__inner {
@@ -321,6 +353,9 @@
 }
 
 @media(max-width:575.8px) {
+    .guidelinesforcv__slide {
+        padding: 20px 20px 50px;
+    }
 
     .guidelinesforcv__descr .descr {
         min-height: initial;
@@ -343,7 +378,6 @@
     .tipsslarrows .swiper-button-prev {
         width: 50px;
         height: 50px;
-        top: -40px;
     }
 
     .tipsslarrows .swiper-button-next {

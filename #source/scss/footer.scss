@@ -1,4 +1,6 @@
 footer.footer {
+    position: relative;
+    z-index: 5;
     .footer__topsect {
         border-top: 24px solid #344A66;
         background: #fff;
@@ -26,6 +28,7 @@ footer.footer {
 
 .footer__left {
     width: 40%;
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -53,7 +56,7 @@ footer.footer {
 }
 
 .footer__socials {
-    padding: 26px 0;
+    padding: 26px 30px 26px 0;
 
     ul {
         padding: 0;
@@ -68,7 +71,8 @@ footer.footer {
             &:last-child {
                 margin-right: 0;
             }
-            a{
+
+            a {
                 display: block;
                 height: 36px;
             }
@@ -83,7 +87,8 @@ footer.footer {
             border-radius: 4px;
             overflow: hidden;
             transition: .3s;
-            &:hover{
+
+            &:hover {
                 opacity: .8;
             }
         }
@@ -159,6 +164,28 @@ footer.footer {
                 }
             }
         }
+    }
+}
+
+.footer__bottomlinks {
+    margin: 0 50px 0 auto;
+
+    a {
+        color: #2A2A2A;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: .3s;
+        display: block;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        margin-top: 10px;
+
     }
 }
 
@@ -243,6 +270,13 @@ footer.footer {
 }
 
 @media(max-width:991.8px) {
+    .footer__bottomlinks {
+        margin: 0;
+    }
+
+    .footer__socials {
+        width: 100%;
+    }
 
     .footer__left,
     .footer__nav {
@@ -263,6 +297,7 @@ footer.footer {
     }
 
     .footer__nav {
+        margin-top: 20px;
         padding-left: 0;
     }
 
@@ -299,6 +334,18 @@ footer.footer {
 }
 
 @media(max-width:767.8px) {
+    .footer__socials {
+        padding: 15px 0px 0px 0;
+    }
+
+    .footer__bottomlinks {
+        width: 100%;
+        margin-bottom: 4px;
+        a{
+            margin-top: 24px;
+        }
+    }
+
     .footer__nav nav>ul {
         display: flex;
         flex-wrap: wrap;
@@ -333,6 +380,7 @@ footer.footer {
     .footer__logo img {
         max-width: 142px;
     }
+
     .footer__socials {
         padding: 0 0 10px;
     }
@@ -383,15 +431,25 @@ footer.footer {
 
     footer.footer .footer__botsect {
         padding: 20px;
-        ul li{
-            margin-bottom: 15px;
-            margin-right: 15px;
+
+        ul li {
+            margin-bottom: 20px;
         }
     }
 
     footer.footer .footer__botsect p {
         font-size: 12px;
         line-height: 18px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer__socials{
+        max-width: 300px;
+        margin: 0 auto;
+        ul{
+            justify-content: space-between;
+        }
     }
 
 }

@@ -2,8 +2,8 @@
 
 .ba-welcomesect {
     width: 100%;
-    height: calc(100vh - 80px);
-    min-height: 800px;
+    // height: 609px;
+    height: 460px;
     overflow: hidden;
     position: relative;
 
@@ -28,6 +28,8 @@
     display: flex;
     align-items: center;
     padding-right: 15px;
+    // padding-bottom: 100px;
+    padding-bottom: 50px;
 
     .ba-welcomesect__infowrap {
         h1 {
@@ -79,7 +81,8 @@
     z-index: 2;
     width: 100%;
     background: rgba(18, 56, 103, 0.92);
-    padding: 40px 0 50px;
+    // padding: 40px 0 50px;
+    padding: 28px 0 29px;
 
     ul {
         display: flex;
@@ -164,7 +167,7 @@
 }
 
 .ba-employment__descr {
-    max-width: 700px;
+    max-width: 940px;
     text-align: center;
     margin: 0 auto 24px;
     color: #fff;
@@ -191,6 +194,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: -230px;
+
+    >h4 {
+        display: block;
+        width: 100%;
+        color: #2A2A2A;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
 }
 
 .ba-workflow__accordion {
@@ -399,7 +413,8 @@
             border-radius: 8px;
             overflow: hidden;
             display: block;
-            height: 288px;
+            // height: 288px;
+            height: 212px;
 
             &+li {
                 margin-top: 20px;
@@ -462,7 +477,6 @@
 
     p {
         color: #F2F4F8;
-        min-height: 120px;
 
         &:last-child {
             margin-bottom: 30px;
@@ -521,7 +535,7 @@
     }
 
     li {
-        background: #E0EBFA;
+        background: #C3D7F1;
         color: rgba(42, 42, 42, 0.75);
 
         &:before {
@@ -565,7 +579,7 @@
 
     h5 {
         border-radius: 4px;
-        background: #E0EBFA;
+        background: #C3D7F1;
         margin-bottom: 12px;
         padding: 10px 16px;
         color: #2676DA;
@@ -612,6 +626,10 @@
     }
 }
 
+.ba-weoffer__img{
+    position: relative;
+}
+
 .ba-weoffer__item {
     position: relative;
     width: 100%;
@@ -641,6 +659,7 @@
         object-fit: cover;
         height: 360px;
         display: block;
+        border-radius: 8px;
     }
 }
 
@@ -842,6 +861,7 @@
 
     p {
         margin-bottom: 12px;
+        font-weight: 400;
         line-height: 160%;
     }
 
@@ -851,7 +871,7 @@
 
         li {
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 130%;
 
             &+li {
@@ -1039,7 +1059,7 @@
     }
 
     .ba-workflow__offerbox ul li {
-        height: 250px;
+        height: 183px;
     }
 
     .ba-workflow__accordion-inner {
@@ -1089,6 +1109,18 @@
 }
 
 @media (max-width: 1199.8px) {
+
+    .ba-workflow__content > h4 {
+        font-size: 26px;
+    }
+    .ba-welcomesect {
+        height: 582px;
+    }
+
+    .ba-welcomesect__bottom {
+        padding: 20px 0 20px;
+    }
+
     .ba-contract__right {
         padding: 40px 30px;
     }
@@ -1138,7 +1170,7 @@
     }
 
     .ba-workflow__offerbox ul li {
-        height: 230px;
+        height: 169px;
     }
 
     .ba-workflow__offerbox {
@@ -1268,11 +1300,14 @@
     }
 
     .ba-welcomesect__info {
-        width: 60%;
+        width: 58.5%;
+        display: block;
+        padding-top: 60px;
+        padding-bottom: 0;
     }
 
     .ba-welcomesect {
-        height: 680px;
+        height: 628px;
         min-height: initial;
     }
 
@@ -1312,6 +1347,15 @@
 }
 
 @media (max-width: 767.8px) {
+    .ba-workflow__content>h4 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .ba-welcomesect {
+        height: 460px;
+    }
+
     .ba-contract__servitem p {
         font-size: 12px;
     }
@@ -1388,9 +1432,12 @@
     }
 
     .ba-welcomesect__info {
+        display: flex;
         width: 100%;
         padding-left: 0 !important;
         padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .ba-welcomesect__infowrap {
@@ -1499,7 +1546,6 @@
 
     .ba-workflow__about h5 {
         font-size: 18px;
-        ;
     }
 
     .ba-weoffer__item span {
@@ -1554,7 +1600,4 @@
         padding-right: 20px;
     }
 
-    .ba-welcomesect {
-        height: calc(100vh - 60px);
-    }
 }

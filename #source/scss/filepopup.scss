@@ -126,6 +126,7 @@
     align-items: center;
     justify-content: space-between;
 
+    a,
     button {
         min-width: 180px;
     }
@@ -204,10 +205,17 @@
         width: 162px;
     }
 
+    .filepopup__btns{
+        flex-wrap: wrap;
+    }
+
+    .filepopup__btns a,
     .filepopup__btns button {
         font-size: 14px;
-        max-width: 140px;
+        max-width: 100%;
+        width: 100%;
         min-width: initial;
+        margin-bottom: 10px;
     }
 
     .file-uploadresult .uplwrap .filewrapper input {

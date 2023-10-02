@@ -2,7 +2,9 @@
 
 .ap-heroscreen {
     width: 100%;
-    height: calc(100vh - 80px);
+    // min-height: 750px;
+    // height: calc(100vh - 80px);
+    height: 680px;
     overflow: hidden;
     position: relative;
 
@@ -11,6 +13,18 @@
         height: 100%;
         object-fit: cover;
         object-position: 50% 50%;
+    }
+
+    .pi-heroscreen__bottom {
+        h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -22,7 +36,7 @@
     left: 0;
     top: 0;
     display: flex;
-    align-items: center;
+    padding-top: 120px;
     padding-right: 15px;
 }
 
@@ -320,12 +334,39 @@
     margin-bottom: 0;
 }
 
+.ap-form .inputblock .inputfield p a{
+    color: #1C4B85;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: .3s;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+
 
 // RESPONSIVE -------------------- //
 
 @media (max-width: 1399.8px) {
+    .ap-heroscreen .pi-heroscreen__bottom h2 {
+        font-size: 34px;
+    }
     .ap-form .inputblock .inputfield.textarea p {
         max-width: 220px;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .ap-heroscreen .pi-heroscreen__bottom {
+        h2 {
+            font-size: 28px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
 }
 @media (max-width: 991.8px) {
@@ -405,9 +446,6 @@
         max-width: 340px;
     }
 
-    .ap-heroscreen {
-        height: calc(100vh - 60px);
-    }
 }
 
 @media (max-width: 767.8px) {
@@ -479,6 +517,14 @@
 }
 
 @media (max-width: 575.8px) {
+    .ap-heroscreen .pi-heroscreen__bottom {
+        h2 {
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
 
     .ap-heroscreen__info.cpl {
         padding-left: 20px !important;
