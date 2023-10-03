@@ -831,4 +831,18 @@ $(document).ready(function () {
     });
 
 
+
+    //  mp-slider  ------------ //
+    $('.mp-text__slide').on('click', function() {
+        var indexTab = $(this).attr('data-index');
+        $('.mp-image__slide').removeClass('show').hide();
+        $('.mp-text__slide').removeClass('active');
+        $('.mp-text__slide').find('.content').slideUp();
+        $(this).addClass('active');
+        $(this).find('.content').slideDown();
+        $('.' + indexTab).addClass('show').fadeIn(400);
+        return false;
+    })
+
+
 });
