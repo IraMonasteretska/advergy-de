@@ -818,4 +818,17 @@ $(document).ready(function () {
     }
 
 
+    // mp vacancy ---------------- //
+
+    $('.vacancies__tab').on('click', function (e) {
+        e.preventDefault;
+        var indexTab = $(this).attr('data-vacancy');
+        $('.mp-vacancies__wrapper').removeClass('show').hide();
+        $('.vacancies__tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + indexTab).addClass('show').fadeIn(400);
+        return false;
+    });
+
+
 });
