@@ -452,12 +452,8 @@
 }
 
 .mp-services__content {
-    .title {
+    .secttitle {
         color: #2A2A2A;
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
         margin-bottom: 16px;
 
         span {
@@ -471,13 +467,18 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        padding-left: 92px;
+        position: relative;
 
         &:before {
             content: '';
-            display: inline-block;
+            position: absolute;
             background: #1C4B85;
             width: 80px;
             height: 4px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             margin-right: 12px;
             vertical-align: middle;
         }
@@ -513,10 +514,6 @@
     h3 {
         color: #FFF;
         text-align: center;
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
     }
 }
 
@@ -607,7 +604,7 @@
 
 .mp-services__smallcircle1 {
     top: -90px;
-    right: 210px;
+    right: 130px;
     background-color: #D4DCE7;
 
     p {
@@ -617,7 +614,7 @@
 
 .mp-services__smallcircle2 {
     bottom: -50px;
-    right: 100px;
+    right: 50px;
     background-color: #679FE4;
 
     p {
@@ -707,6 +704,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .mp-vacancies__wrapper {
@@ -749,6 +747,7 @@
 
     .address {
         margin-bottom: 16px;
+        display: flex;
 
         img {
             width: 16px;
@@ -763,6 +762,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-bottom: 0;
         }
     }
 
@@ -773,6 +773,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-bottom: 0;
         }
     }
 }
@@ -784,13 +785,52 @@
     display: flex;
 }
 
+.mp-slider__slider {
+    width: 100%;
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next,
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+        top: 48%;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        background-image: url(../img/AdvergyPhase2/mp_slider_arr_prev.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 28px;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        background-image: url(../img/AdvergyPhase2/mp_slider_arr_next.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 28px;
+    }
+}
+
+.mp-slider__slide {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .mp-slider__left {
     width: 53%;
 }
 
 .mp-slider__right {
     width: 47%;
-    padding: 80px 60px;
+    padding: 80px 150px 80px 60px;
 }
 
 .mp-image__slide {
@@ -913,6 +953,109 @@
     }
 }
 
+.mp-slider__secondslide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 32px;
+}
+
+.mp-slider__secondslide-text {
+    width: calc(50% - 16px);
+
+    h2 {
+        color: #2A2A2A;
+        margin-bottom: 30px;
+        line-height: 110%;
+
+        span {
+            color: #679FE4;
+        }
+    }
+
+    p {
+        color: #6A7689;
+    }
+}
+
+.mp-slider__secondslide-box {
+    width: 100%;
+    border: 1px solid #d4dce7;
+    width: calc(50% - 16px);
+}
+
+.mp-slider__secondslide-head {
+    background: #F2F4F8;
+    height: 84px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+
+    span {
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: #344A66;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+    }
+
+    h3 {
+        color: #344A66;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.mp-slider__secondslide-content {
+    padding: 20px 24px;
+    position: relative;
+    min-height: 220px;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: #344A66;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: #8FA1BD;
+        margin-bottom: 4px;
+    }
+
+    .index {
+        position: absolute;
+        top: 40%;
+        right: 24px;
+        z-index: -1;
+        color: #F2F4F8;
+        font-size: 222px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+    }
+}
+
 // mp-benefits section ------------------ //
 .mp-benefits {
     display: flex;
@@ -963,7 +1106,17 @@
 .mp-benefits__right {
     background: #344A66;
     width: 47%;
-    padding: 32px 44px;
+    padding: 0px 44px;
+}
+
+.mp-benefits__slider {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        height: fit-content !important;
+    }
 }
 
 .mp-benefits__slide {
@@ -1047,16 +1200,48 @@
 // ADAPTIVE ----------------- //
 
 @media(max-width: 1399.8px) {
+    .mp-vacancies__tabs .vacancies__tab {
+        padding: 15px 40px;
+    }
+
+    .mp-vacancies__title {
+        margin-bottom: 15px;
+        font-size: 26px;
+        padding: 0px 40px;
+    }
+
+    .mp-vacancies__wrapper {
+        width: 785px;
+    }
+
+    .mp-vacancies__boxwrap {
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .mp-vacancies__box {
+        width: 380px;
+    }
+
+    .mp-services__bigcircle {
+        width: 590px;
+        height: 590px;
+        margin-left: 30px;
+    }
+
+    .mp-services {
+        padding: 130px 0;
+    }
+
     .mp-specialization {
         height: auto;
         min-height: auto;
     }
+
     .mp-specialization__inner {
         padding: 70px 20px;
     }
-    .mp-specialization__left h3 {
-        font-size: 46px;
-    }
+
     .mp-servblocks__item-img {
         height: 260px;
     }
@@ -1084,6 +1269,55 @@
 }
 
 @media(max-width: 1199.8px) {
+    .mp-vacancies__box {
+        padding: 30px 20px;
+    }
+
+    .mp-vacancies__box .title {
+        font-size: 16px;
+    }
+
+    .mp-vacancies__title {
+        padding: 0px 20px;
+    }
+
+    .mp-vacancies__tabs .vacancies__tab {
+        padding: 12px 20px;
+    }
+
+    .mp-vacancies__left {
+        width: 28%;
+    }
+
+    .mp-vacancies__right {
+        width: 72%;
+    }
+
+    .mp-vacancies__wrapper {
+        width: 690px;
+    }
+
+    .mp-vacancies__boxwrap {
+        gap: 10px;
+    }
+
+    .mp-vacancies__box {
+        width: 340px;
+    }
+
+    .mp-services__bigcircle {
+        margin: 0 auto;
+    }
+
+    .mp-services__content {
+        margin-bottom: 100px;
+        max-width: 800px;
+    }
+
+    .mp-services {
+        padding: 70px 0 130px;
+    }
+
     .mp-specialization__left {
         max-width: 800px;
         margin: 0 0 30px;
@@ -1091,6 +1325,10 @@
 
     .mp-specialization__inner {
         flex-wrap: wrap;
+    }
+
+    .mp-specialization__left h3 {
+        font-size: 46px;
     }
 
     .mp-servblocks__item-img {
@@ -1108,18 +1346,121 @@
 }
 
 @media(max-width: 991.8px) {
+    .mp-vacancies__inner {
+        padding: 20px;
+    }
+
+    .mp-vacancies__boxwrap {
+        gap: 0;
+        margin: 0 -5px 20px;
+    }
+
+    .mp-vacancies__box {
+        width: calc(50% - 10px);
+        margin: 0 5px 10px;
+    }
+
+    .mp-vacancies__left {
+        padding: 40px 0px 30px;
+    }
+
+    .mp-vacancies__title {
+        padding: 0px 20px;
+        max-width: 720px;
+        margin: 0 auto 20px;
+    }
+
+    .mp-vacancies__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+
+        .vacancies__tab {
+            width: 50%;
+        }
+    }
+
+    .mp-vacancies__wrapper {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .mp-vacancies {
+        flex-wrap: wrap;
+    }
+
+    .mp-vacancies__right {
+        width: 100%;
+    }
+
+    .mp-vacancies__left {
+        width: 100%;
+    }
+
+    .mp-services__smallcircle1,
+    .mp-services__smallcircle2,
+    .mp-services__smallcircle3 {
+        width: 180px;
+        height: 180px;
+
+        p {
+            font-size: 16px;
+            padding-left: 15px;
+        }
+
+        .hover-box {
+            display: none;
+        }
+
+        &:hover {
+            width: 180px;
+            height: 180px;
+
+            p {
+                opacity: 1;
+            }
+        }
+    }
+
+    .mp-services__bigcircle {
+        width: 520px;
+        height: 520px;
+        padding: 30px;
+    }
+
+    .mp-services__smallcircle2 {
+        bottom: -20px;
+        right: 0px;
+    }
+
+    .mp-services__smallcircle3 {
+        bottom: -20px;
+        left: 0px;
+    }
+
+    .mp-services__smallcircle1 {
+        top: -70px;
+        right: 140px;
+    }
+
     .mp-specialization__left h3 {
         font-size: 36px;
     }
+
     .mp-specialization__item p {
         font-size: 20px;
     }
+
     .mp-specialization__item {
         height: 120px;
-        a{
-            padding: 20px 40px; 
+
+        a {
+            padding: 20px 40px;
         }
     }
+
     .mp-servblocks__item-img {
         height: auto;
     }
@@ -1165,6 +1506,12 @@
 }
 
 @media(max-width: 767.8px) {
+
+    .mp-vacancies__title {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
     .mp-tour__content {
         padding: 50px 0;
     }
@@ -1200,15 +1547,92 @@
 }
 
 @media(max-width: 575.8px) {
+    .mp-vacancies__boxwrap {
+        margin: 0 0px 20px;
+    }
+
+    .mp-vacancies__wrapper {
+        .whitebtn {
+            width: 100%;
+        }
+    }
+
+    .mp-vacancies__box .title {
+        font-size: 15px;
+    }
+
+    .mp-vacancies__box .text p {
+        font-size: 14px;
+    }
+
+    .mp-vacancies__box .address {
+        margin-bottom: 10px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .mp-vacancies__title {
+        padding: 0px 15px;
+    }
+
+    .mp-vacancies__left {
+        padding: 40px 0px 20px;
+    }
+
+    .mp-vacancies__tabs .vacancies__tab {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .mp-vacancies__box {
+        width: 100%;
+        margin: 0 0 10px;
+        min-height: auto;
+    }
+
+
+
+    .mp-services__bigcircle {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .mp-services__bigcircle {
+        .secttitle {
+            font-size: 26px;
+            line-height: 130%;
+        }
+    }
+
+    .mp-services__smallcircle1,
+    .mp-services__smallcircle2,
+    .mp-services__smallcircle3 {
+        width: 140px;
+        height: 140px;
+
+        p {
+            font-size: 14px;
+
+            svg {
+                display: none;
+            }
+        }
+    }
+
     .mp-specialization__inner {
         padding: 50px 12px 40px;
     }
+
     .mp-specialization__left h3 {
         font-size: 28px;
     }
+
     .mp-specialization__item {
         width: 100%;
     }
+
     .mp-servblocks__item-content .arrow {
         right: 10px;
     }
@@ -1270,5 +1694,48 @@
     .mp-heroscreen__slider .swiper-button-next,
     .mp-heroscreen__slider .swiper-rtl .swiper-button-prev {
         right: 10px;
+    }
+}
+
+@media(max-width: 460px) {
+    .mp-services {
+        padding: 70px 0 100px;
+    }
+
+    .mp-services__content .subtitle {
+        font-size: 16px;
+    }
+
+    .mp-services__smallcircle1,
+    .mp-services__smallcircle2,
+    .mp-services__smallcircle3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mp-services__smallcircle1 {
+        top: -50px;
+        right: 80px;
+    }
+
+    .mp-services__smallcircle2 {
+        bottom: -20px;
+        right: 0px;
+    }
+
+    .mp-services__smallcircle3 {
+        bottom: -20px;
+        left: 0px;
+    }
+
+    .mp-services__bigcircle .secttitle {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .mp-services__smallcircle1 p,
+    .mp-services__smallcircle2 p,
+    .mp-services__smallcircle3 p {
+        font-size: 10px;
     }
 }
