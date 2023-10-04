@@ -817,6 +817,19 @@ $(document).ready(function () {
         });
     }
 
+        //  mp-specialization  ------------ //
+        // $('.mp-specialization__item').on('click', function () {
+        //     var indexTab = $(this).attr('data-index');
+        //     $('.mp-image__slide').removeClass('show').hide();
+        //     $('.mp-specialization__item').removeClass('active');
+        //     $(this).addClass('active');
+        //     $('.' + indexTab).addClass('show').fadeIn(400);
+        //     return false;
+        // });
+
+
+
+
 
     // mp vacancy ---------------- //
 
@@ -832,17 +845,25 @@ $(document).ready(function () {
 
 
 
-    //  mp-slider  ------------ //
-    $('.mp-text__slide').on('click', function() {
-        var indexTab = $(this).attr('data-index');
-        $('.mp-image__slide').removeClass('show').hide();
-        $('.mp-text__slide').removeClass('active');
-        $('.mp-text__slide').find('.content').slideUp();
-        $(this).addClass('active');
-        $(this).find('.content').slideDown();
-        $('.' + indexTab).addClass('show').fadeIn(400);
-        return false;
-    })
+
+
+    //  mp-benefits  ------------ //
+    if ($('*').is('.mp-benefits__slider')) {
+        var swiper = new Swiper(".mp-benefits__slider", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+            direction: "vertical",
+            autoplay: {
+                delay: 0,
+            },
+            autoplayStopOnLast: false,
+            loop: true,
+            speed: 1000,
+            pauseOnHover: true,
+        });
+    }
 
 
 });
