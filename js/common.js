@@ -836,34 +836,13 @@ $(document).ready(function () {
         var indexTab = $(this).attr('data-index');
         $('.mp-image__slide').removeClass('active-img').hide();
         $('.mp-text__slide').removeClass('active');
+        $('.mp-text__slide').find('.content').slideUp();
+        $(this).find('.content').slideDown();
         $(this).addClass('active');
         $('.' + indexTab).addClass('active-img').fadeIn(600);
         return false;
     });
 
-
-
-
-
-    //  mp-benefits  ------------ //
-    if ($('*').is('.mp-benefits__slider')) {
-        var swiper = new Swiper(".mp-benefits__slider", {
-            spaceBetween: 40,
-            slidesPerView: 3,
-            pauseOnHover: true,
-            direction: "vertical",
-            mousewheel: true,
-            speed: 5000,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false,
-                waitForTransition: true,
-            },
-            loop: true,
-            freeMode: true,
-            speed: 3000,
-        });
-    }
 
     //  mp-specialization  ------------ //
     // auto show images
@@ -911,6 +890,26 @@ $(document).ready(function () {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    }
+
+    //  mp-benefits  ------------ //
+    if ($('*').is('.mp-benefits__slider')) {
+        var swiper = new Swiper(".mp-benefits__slider", {
+            spaceBetween: 40,
+            slidesPerView: 3,
+            pauseOnHover: true,
+            direction: "vertical",
+            mousewheel: true,
+            speed: 5000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+                waitForTransition: true,
+            },
+            loop: true,
+            freeMode: true,
+            speed: 3000,
         });
     }
 
